@@ -1,0 +1,67 @@
+.Header {
+  background-color: deepskyblue;
+}
+.Header .container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 40px;
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+  row-gap: 10px;
+  column-gap: 80px;
+}
+.Header .logo {
+  grid-area: 1 / 1 / 4 / 2;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Header .logo img {
+  height: 128px;
+}
+.Header-contacts {
+  grid-area: 1 / 2 / 2 / 4;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+.Header-call_center {
+  display: flex;
+  gap: 20px;
+}
+.Header-consumer_info {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+.Header .SearchBar {
+  grid-area: 2 / 2 / 3 / 3;
+  align-self: center;
+}
+.Header-nav_bar {
+  grid-area: 3 / 2 / 4 / 3;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.Header-nav_bar li a {
+  display: block;
+  margin: 0 20px;
+  border-bottom: solid 3px transparent;
+  padding: 10px 0 7px;
+}
+.Header-user {
+  grid-area: 2 / 3 / 3 / 4;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.Header-account::before {
+  content: '\f007';
+}
