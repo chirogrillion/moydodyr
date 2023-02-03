@@ -1,17 +1,44 @@
+a[class^="link"],
+a[class^="link"]:visited {
+  color: white;
+  text-decoration: none;
+}
+a[class^="link"]:hover {
+  text-decoration: underline;
+}
+a[class^="link"]::before {
+  display: inline-block;
+  width: 22px;
+  padding-right: 5px;
+  text-align: center;
+  line-height: 1.05em;
+  font-family: 'Font Awesome 6 Free Solid';
+}
+a.link-location::before {
+  content: '\f3c5';
+}
+a.link-tel::before {
+  content: '\f095';
+}
+input[type="text"] {
+  border: solid 3px var(--clr-main);
+  border-radius: 20px;
+  padding: 7px 17px;
+  font-size: 1rem;
+  line-height: inherit;
+  font-family: 'Roboto', sans-serif;
+}
 button {
   cursor: pointer;
-  border: none;
+  border: solid 3px var(--clr-main);
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 7px 17px;
   font-weight: 700;
   font-size: 1rem;
   line-height: inherit;
   font-family: 'Roboto', sans-serif;
-  color: white;
-  background-color: var(--clr-main);
 }
-button::before,
-button::after {
+button::before {
   padding-right: 10px;
   line-height: 1em;
   font-family: 'Font Awesome 6 Free Solid';

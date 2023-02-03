@@ -1,5 +1,7 @@
 body {
   --clr-main: rgb(37, 71, 150);
+  --clr-shadow: rgb(20, 39, 82);
+  --clr-accent: rgb(0, 173, 231);
   --clr-warn: rgb(246, 180, 4);
   --clr-destr: rgb(226, 30, 35);
   margin: 0;

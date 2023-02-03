@@ -1,5 +1,5 @@
 .Header {
-  background-color: deepskyblue;
+  background-color: var(--clr-accent);
 }
 .Header .container {
   margin: 0 auto;
@@ -26,6 +26,9 @@
   display: flex;
   justify-content: space-between;
   gap: 80px;
+  color: white;
+  text-shadow: 0 1px 1px var(--clr-shadow);
+  font-weight: 500;
 }
 .Header-call_center {
   display: flex;
@@ -49,6 +52,9 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
+  color: white;
+  text-shadow: 0 1px 1px var(--clr-shadow);
+  font-weight: 500;
 }
 .Header-nav_bar li a {
   display: block;
@@ -61,6 +67,11 @@
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.Header-user button {
+  color: white;
+  background-color: var(--clr-main);
+  box-shadow: 0 1px 1px 0 var(--clr-shadow);
 }
 .Header-account::before {
   content: '\f007';
