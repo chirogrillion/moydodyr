@@ -19,20 +19,24 @@ function Header() {
             <span>с 9:00 до 21:00</span>
           </div>
           <ul className="Header-consumer_info">
-            <li><a className="link">Пункты выдачи</a></li>
-            <li><a className="link">Доставка</a></li>
-            <li><a className="link">Оплата</a></li>
-            <li><a className="link">Акции</a></li>
+            <li><a>Пункты выдачи</a></li>
+            <li><a>Доставка</a></li>
+            <li><a>Оплата</a></li>
+            <li><a>Акции</a></li>
           </ul>
         </section>
         <SearchBar/>
-        <ul className="Header-nav_bar">
-          <li><a>Все товары</a></li>
-          <li><a>Категория 1</a></li>
-          <li><a>Категория 2</a></li>
-          <li><a>Категория 3</a></li>
-          <li><a>Ещё</a></li>
-        </ul>
+        <nav>
+          <ul className="Header-categories-popular">
+            <li><a>Стирка</a></li>
+            <li><a>Мытьё посуды</a></li>
+            <li><a>Чистка кухни</a></li>
+            <li><a>Чистка санузла</a></li>
+            <li><a>Инвентарь для уборки</a></li>
+          </ul>
+          <a className="link-more">Больше</a>
+        </nav>
+        <section className="Header-categories-all"></section>
         <section className="Header-user">
           <CartButton/>
           <button
