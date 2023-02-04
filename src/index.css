@@ -6,6 +6,7 @@ body {
   --clr-warn: rgb(246, 180, 4);
   --clr-destr: rgb(226, 30, 35);
   margin: 0;
+  color: var(--clr-main);
   line-height: 1.25em;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
