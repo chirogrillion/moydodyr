@@ -43,3 +43,10 @@
   background-color: white;
   box-shadow: 0 1px 10px 0 var(--clr-shadow-50);
 }
+.NavBar-all_categories > ul > li > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.NavBar-all_categories > ul > li > ul > li {
+  flex: 0 0 50%;
+}

@@ -6,14 +6,15 @@ const categories = require('../../../assets/categories.json');
 
 function NavBar() {
 
-  const getLayout = (arr) => {
-    console.log('getLayout()');
-    return arr.map(v => {
-      <article key={v.code}>
+  function getLayout(arr) {
+    let layout = [];
+    arr.forEach(v => layout.push(
+      <li key={v.code}>
         <a>{v.name}</a>
-        {v.sub ? getLayout(v.sub) : null}
-      </article>
-    });
+        {v.sub ? <ul>{getLayout(v.sub)}</ul> : null}
+      </li>
+    ));
+    return layout;
   };
 
   return (
@@ -27,7 +28,7 @@ function NavBar() {
       </ul>
       <a className="link-more">Больше</a>
       <section className="NavBar-all_categories">
-        {getLayout(categories)}
+        <ul>{getLayout(categories)}</ul>
       </section>
     </section>
   );
