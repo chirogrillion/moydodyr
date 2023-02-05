@@ -1,0 +1,21 @@
+.Main {
+  background-color: whitesmoke;
+}
+.Main-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1280px;
+  display: grid;
+  grid-template: auto auto / 360px 920px;
+  background-color: rgb(252, 252, 252);
+}
+.Main-container > header {
+  grid-area: 1 / 1 / 2 / 3;
+  padding: 20px 40px;
+}
+.Main-container .Sidebar {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.Main-container .Content {
+  grid-area: 2 / 2 / 3 / 3;
+}

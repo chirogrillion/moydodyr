@@ -1,0 +1,48 @@
+.Sidebar {
+  align-self: start;
+  margin: 20px;
+  outline: solid 1px lightgray;
+  border-radius: 20px;
+  background-color: white;
+}
+.Sidebar header,
+.Sidebar footer {
+  margin: 0 20px;
+  padding: 20px 0;
+  background-color: white;
+}
+.Sidebar header {
+  position: sticky;
+  top: 0;
+  border-bottom: solid 1px lightgray;
+}
+.Sidebar header::after {
+  position: absolute;
+  top: calc(100% + 1px);
+  content: '';
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(to bottom, white, transparent);
+}
+.Sidebar header h2 {
+  margin: 0;
+  text-align: center;
+}
+.Sidebar main {
+  padding: 0 20px;
+}
+.Sidebar footer {
+  position: sticky;
+  bottom: 0;
+  border-top: solid 1px lightgray;
+  display: flex;
+  justify-content: space-between;
+}
+.Sidebar footer::before {
+  position: absolute;
+  bottom: calc(100% + 1px);
+  content: '';
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(to top, white, transparent);
+}
