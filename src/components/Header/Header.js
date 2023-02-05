@@ -3,7 +3,6 @@ import React from 'react';
 import './Header.css';
 
 import SearchBar from './SearchBar/SearchBar';
-import NavBar from './NavBar/NavBar';
 import CartButton from './CartButton/CartButton';
 import AccountButton from './AccountButton/AccountButton';
 
@@ -31,7 +30,6 @@ function Header() {
           </ul>
         </section>
         <SearchBar/>
-        <NavBar/>
         <section className="Header-user">
           <CartButton/>
           <AccountButton/>
