@@ -1,0 +1,8 @@
+.QuantityInput input::-webkit-outer-spin-button,
+.QuantityInput input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.QuantityInput input[type="number"] {
+  -moz-appearance: textfield;
+}

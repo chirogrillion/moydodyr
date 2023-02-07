@@ -14,7 +14,7 @@ function Header() {
     <header className="Header">
       <div className="Header-container">
         <section className="Header-logo">
-          <img src={logo}/>
+          <img src={logo} alt="Мойдодыр"/>
         </section>
         <section className="Header-contacts">
           <a className="link-location">Минск</a>
