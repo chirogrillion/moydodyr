@@ -1,13 +1,54 @@
 [
   {
-    "code": 110101001,
-    "name": "Persil Color Свежесть от Vernel (3 кг)",
-    "type": 1101,
+    "code": 1101001,
+    "name": "Стиральный порошок Persil Color Свежесть от Vernel (3 кг)",
     "imgURL": "https://iili.io/HE9OoeS.jpg",
     "price": 32.94,
     "brand": 100,
-    "unique-1100": {
-
+    "form": 6,
+    "filters-1100": {
+      "11001": 1,
+      "11002": 2
     }
+  },
+  {
+    "code": 1102001,
+    "name": "Пятновыводитель и отбеливатель Vanish (500 г)",
+    "imgURL": "https://iili.io/HEdqaTu.jpg",
+    "price": 7.80,
+    "brand": 103,
+    "form": 6,
+    "filters-1100": {
+      "11001": 0,
+      "11002": 1
+    }
+  },
+  {
+    "code": 1103001,
+    "name": "Кондиционер для детского белья Synergetic (2,75 л)",
+    "imgURL": "https://iili.io/HEdTiBe.jpg",
+    "price": 26.54,
+    "brand": 104,
+    "form": 4,
+    "filters-1100": {
+      "11001": 0,
+      "11002": 4
+    }
+  },
+  {
+    "code": 1201001,
+    "name": "Средство для мытья посуды Fairy Pure & Clean (450 мл)",
+    "imgURL": "https://iili.io/HEddoLN.jpg",
+    "price": 10.44,
+    "brand": 101,
+    "form": 4
+  },
+  {
+    "code": 1202001,
+    "name": "Таблетки для посудомоечной машины Finish Classic (28 шт.)",
+    "imgURL": "https://iili.io/HEdFU37.jpg",
+    "price": 17.00,
+    "brand": 102,
+    "form": 8
   }
 ]
