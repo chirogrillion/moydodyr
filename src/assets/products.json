@@ -1,8 +1,13 @@
 [
   {
-    "code": 1101001,
-    "name": "Стиральный порошок Persil Color Свежесть от Vernel (3 кг)",
-    "imgURL": "",
-    "price": 32.94
+    "code": 110101001,
+    "name": "Persil Color Свежесть от Vernel (3 кг)",
+    "type": 1101,
+    "imgURL": "https://iili.io/HE9OoeS.jpg",
+    "price": 32.94,
+    "brand": 100,
+    "unique-1100": {
+
+    }
   }
 ]
