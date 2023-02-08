@@ -8,7 +8,9 @@ import {changeProductQuantity} from '../../../../../store/cart';
 
 const AddToCart = props => {
 
-  const products = useSelector(state => state.productsInCart);
+  console.log('render' + props.productId);
+
+  const productQuantity = useSelector(state => state.cart[props.productId]);
   const dispatch = useDispatch();
 
   const addToCart = () => {
@@ -17,8 +19,8 @@ const AddToCart = props => {
 
   return (
     <div className="AddToCart">{
-      products[props.productId]
-        ? <QuantityInput number={products[props.productId]}/>
+      productQuantity
+        ? <QuantityInput number={productQuantity}/>
         : <button
           className="AddToCart-button"
           type="button"
