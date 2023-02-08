@@ -1,4 +1,7 @@
 import React from 'react';
+import {Provider} from 'react-redux';
+
+import {store} from './store/store';
 
 import './App.css';
 
@@ -8,11 +11,11 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <React.Fragment>
+    <Provider store={store}>
       <Header/>
       <Main/>
       <Footer/>
-    </React.Fragment>
+    </Provider>
   );
 }
 

@@ -1,16 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import './ProductCard.css';
 
 import {formatPrice} from '../../../formatPrice';
-import QuantityInput from './QuantityInput/QuantityInput';
-import AddToCartButton from './AddToCartButton/AddToCartButton';
+import AddToCart from './AddToCart/AddToCart';
 
 const ProductCard = props => {
-
-  const [quantity, setQuantity] = useState(1);
-
-  const quantityChanged = num => setQuantity(num);
 
   return (
     <article
@@ -29,15 +24,7 @@ const ProductCard = props => {
           : <p className="ProductCard-price">{formatPrice(props.price)}</p>
       }
       <h3>{props.name}</h3>
-      <div className="ProductCard-add_to_cart">
-        <QuantityInput
-          number={quantity}
-          cbQuantityChanged={quantityChanged}
-        />
-        <AddToCartButton
-          state={(Number.isInteger(Number(quantity)) && quantity >= 1) ? 'active' : 'disabled'}
-        />
-      </div>
+      <AddToCart productId={props.code}/>
     </article>
   );
 
