@@ -1,8 +1,6 @@
 import {createSlice} from '@reduxjs/toolkit';
 
-const initialState = {
-  productsInCart: {},
-};
+const initialState = {};
 
 export const cart = createSlice({
   name: 'cart',
@@ -10,8 +8,8 @@ export const cart = createSlice({
   reducers: {
     changeProductQuantity: (state, action) => {
       action.payload.quantity > 0
-        ? state.productsInCart[action.payload.code] = action.payload.quantity
-        : delete state.productsInCart[action.payload.code]
+        ? state[action.payload.code] = action.payload.quantity
+        : delete state[action.payload.code]
     },
   },
 });
