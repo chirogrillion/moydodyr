@@ -29,23 +29,26 @@ a.link-tel::before {
 a.link-more::after {
   content: '\f078';
 }
-input[type="text"] {
+input {
   border: solid 3px var(--clr-main);
   border-radius: 20px;
   padding: 7px 17px;
-  font-size: 1rem;
+  color: inherit;
+  font-size: inherit;
   line-height: inherit;
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
 }
 button {
   cursor: pointer;
   border: solid 3px var(--clr-main);
   border-radius: 20px;
   padding: 7px 17px;
+  color: inherit;
   font-weight: 700;
   font-size: 1rem;
   line-height: inherit;
   font-family: 'Roboto', sans-serif;
+  background-color: transparent;
 }
 button::before {
   padding-right: 10px;

@@ -22,12 +22,11 @@ const QuantityInput = props => {
 
   return (
     <div className="QuantityInput">
-      <input
+      <button
         className="QuantityInput-minus"
         type="button"
-        value="&#8722;"
         onClick={quantityMinus1}
-      />
+      >&#8722;</button>
       <input
         type="number"
         min={1}
@@ -35,12 +34,11 @@ const QuantityInput = props => {
         value={props.number}
         onChange={quantityChanged}
       />
-      <input
+      <button
         className="QuantityInput-plus"
         type="button"
-        value="+"
         onClick={quantityPlus1}
-      />
+      >+</button>
     </div>
   );
 

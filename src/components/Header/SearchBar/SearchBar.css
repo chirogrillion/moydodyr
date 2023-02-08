@@ -8,7 +8,6 @@
   display: flex;
   justify-content: center;
   align-items: baseline;
-  color: var(--clr-main);
   background-color: white;
   box-shadow: 0 1px 1px 0 var(--clr-shadow);
 }
@@ -25,7 +24,6 @@
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   padding-left: 7px;
-  color: inherit;
   font-weight: 700;
 }
 .SearchBar-container input:focus {

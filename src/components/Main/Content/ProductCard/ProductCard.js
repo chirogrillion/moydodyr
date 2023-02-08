@@ -17,7 +17,6 @@ const ProductCard = props => {
       className="ProductCard"
     >
       <img src={props.imgURL} alt={props.name}/>
-      <h3>{props.name}</h3>
       {
         props.percentOff > 0
           ? <React.Fragment>
@@ -29,6 +28,7 @@ const ProductCard = props => {
           </React.Fragment>
           : <p className="ProductCard-price">{formatPrice(props.price)}</p>
       }
+      <h3>{props.name}</h3>
       <div className="ProductCard-add_to_cart">
         <QuantityInput
           number={quantity}

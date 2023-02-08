@@ -1,3 +1,7 @@
 .Content {
-  padding: 0 40px 40px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-content: start;
+  gap: 20px;
 }

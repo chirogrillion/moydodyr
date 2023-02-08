@@ -1,3 +1,6 @@
+.QuantityInput {
+  display: flex;
+}
 .QuantityInput input::-webkit-outer-spin-button,
 .QuantityInput input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -5,4 +8,30 @@
 }
 .QuantityInput input[type="number"] {
   -moz-appearance: textfield;
+  flex: 1 1 auto;
+  width: 0;
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+  padding-right: 12px;
+  padding-left: 12px;
+  text-align: center;
+  font-weight: 700;
+}
+.QuantityInput button {
+  flex: 0 0 auto;
+  font-weight: 900;
+  font-family: 'Font Awesome 6 Free Solid';
+}
+.QuantityInput-minus {
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-right: 12px;
+}
+.QuantityInput-plus {
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-left: 12px;
 }
