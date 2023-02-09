@@ -4,14 +4,18 @@ import {useSelector} from 'react-redux';
 import './CartButton.css';
 
 function CartButton() {
-  const productsInCart = useSelector(state => state.cart);
+  const cart = useSelector(state => state.cart);
+  const cartNumber = Object.values(cart).reduce((r, v) => r + v, 0);
+  console.log(cartNumber);
   return (
     <button
       className="CartButton"
       type="button"
     >
       Корзина
-      <div className="CartButton-label">{Object.keys(productsInCart).length}</div>
+      {cartNumber > 0 ? (
+        <div className="CartButton-label">{cartNumber}</div>
+      ) : null}
     </button>
   );
 };

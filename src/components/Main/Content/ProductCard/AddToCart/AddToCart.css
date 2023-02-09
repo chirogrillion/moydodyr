@@ -1,4 +1,7 @@
-.AddToCartButton-disabled {
-  pointer-events: none;
-  opacity: 50%;
+.AddToCart {
+  margin-top: auto;
+  width: 100%;
+}
+.AddToCart-button {
+  width: 100%;
 }

@@ -1,23 +1,29 @@
 import React from 'react';
+import {useDispatch} from 'react-redux';
+import { changeProductQuantity } from '../../../../store/cart';
 
 import './QuantityInput.css';
 
 const QuantityInput = props => {
 
-  const callback = value => props.cbQuantityChanged(value);
+  const dispatch = useDispatch();
 
-  const quantityChanged = eo => callback(eo.target.value);
+  const notifyStore = (num) => {dispatch(
+    changeProductQuantity({code: props.productId, quantity: num})
+  )};
+
+  const quantityChanged = eo => notifyStore(parseInt(eo.target.value));
 
   const quantityMinus1 = () => {
-    const currValue = Number(props.number);
-    if (currValue >= 2) {
-      callback(currValue - 1);
+    const currValue = Number(props.productQuantity);
+    if (currValue >= 1) {
+      notifyStore(currValue - 1);
     }
   };
 
   const quantityPlus1 = () => {
-    const currValue = Number(props.number);
-    callback(currValue + 1);
+    const currValue = Number(props.productQuantity);
+    notifyStore(currValue + 1);
   };
 
   return (
@@ -29,9 +35,9 @@ const QuantityInput = props => {
       >&#8722;</button>
       <input
         type="number"
-        min={1}
+        min={0}
         step={1}
-        value={props.number}
+        value={props.productQuantity}
         onChange={quantityChanged}
       />
       <button

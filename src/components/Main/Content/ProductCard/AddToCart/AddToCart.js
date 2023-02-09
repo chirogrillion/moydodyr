@@ -3,24 +3,27 @@ import {useSelector, useDispatch} from 'react-redux';
 
 import './AddToCart.css';
 
-import QuantityInput from '../QuantityInput/QuantityInput';
+import QuantityInput from '../../QuantityInput/QuantityInput';
 import {changeProductQuantity} from '../../../../../store/cart';
 
 const AddToCart = props => {
 
-  console.log('render' + props.productId);
+  console.log('Рендеринг AddToCart #' + props.productId);
 
   const productQuantity = useSelector(state => state.cart[props.productId]);
   const dispatch = useDispatch();
 
-  const addToCart = () => {
-    dispatch(changeProductQuantity({code: props.productId, quantity: 1}));
-  };
+  const addToCart = () => {dispatch(
+    changeProductQuantity({code: props.productId, quantity: 1})
+  )};
 
   return (
     <div className="AddToCart">{
       productQuantity
-        ? <QuantityInput number={productQuantity}/>
+        ? <QuantityInput
+          productId={props.productId}
+          productQuantity={productQuantity}
+        />
         : <button
           className="AddToCart-button"
           type="button"

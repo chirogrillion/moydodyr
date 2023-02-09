@@ -2,6 +2,8 @@
   border: solid 1px lightgray;
   border-radius: 20px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
   background-color: white;
 }
 .ProductCard img {
