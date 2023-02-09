@@ -1,5 +1,8 @@
 body {
   --clr-main: rgb(37, 71, 150);
+  --clr-main-50: rgba(37, 71, 150, 0.5);
+  --clr-main-25: rgba(37, 71, 150, 0.25);
+  --clr-main-15: rgba(37, 71, 150, 0.15);
   --clr-shadow: rgb(20, 39, 82);
   --clr-shadow-50: rgba(20, 39, 82, 0.5);
   --clr-shadow-25: rgba(20, 39, 82, 0.25);
@@ -7,6 +10,8 @@ body {
   --clr-accent: rgb(0, 173, 231);
   --clr-yellow: rgb(246, 180, 4);
   --clr-red: rgb(226, 30, 35);
+  --clr-red-25: rgba(226, 30, 35, 0.25);
+  --clr-red-15: rgba(226, 30, 35, 0.15);
   margin: 0;
   color: var(--clr-main);
   line-height: 1.25em;

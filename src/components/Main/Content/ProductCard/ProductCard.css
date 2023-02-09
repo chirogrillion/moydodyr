@@ -16,9 +16,48 @@
 .ProductCard-img img {
   display: block;
   width: 100%;
+  border-radius: 5px;
+}
+.ProductCard-discount {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  outline: solid 2px white;
+  border-radius: 5px;
+  padding: 1px 6px;
+  color: white;
+  font-weight: 700;
+  font-size: 0.85rem;
+  background-color: var(--clr-red);
+}
+.ProductCard-discount::before {
+  content: '\2212';
+}
+.ProductCard-discount::after {
+  content: '%';
+}
+.ProductCard-price_wrapper {
+  margin: 12px 0;
+}
+.ProductCard-price_wrapper p {
+  display: inline-block;
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.ProductCard-old_price {
+  margin-right: 0.5ex !important;
+  color: var(--clr-main-50);
+  text-decoration: line-through 0.125em var(--clr-red);
+}
+.ProductCard-old_price + .ProductCard-price {
+  color: var(--clr-red);
+}
+.ProductCard-price::after {
+  content: ' р.';
 }
 .ProductCard h3 {
-  margin: 0 0 17px;
+  margin: 0 0 20px;
   font-weight: 400;
   font-size: 1rem;
 }

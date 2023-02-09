@@ -8,15 +8,11 @@
   padding: 10px 8px;
   font-size: 1.5rem;
   font-family: 'Font Awesome 6 Free Solid';
-  background-color: white;
+  background-color: white !important;
 }
-.FavoriteToggle-is_not_fav {
+.FavoriteToggle-hiding {
   opacity: 0;
-  transition-duration: 100ms;
 }
-.ProductCard:hover .FavoriteToggle-is_not_fav {
+.ProductCard:hover .FavoriteToggle-hiding {
   opacity: 1;
-}
-.FavoriteToggle-is_fav {
-  color: var(--clr-red);
 }

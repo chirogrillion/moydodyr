@@ -9,6 +9,7 @@
 .QuantityInput input[type="number"] {
   -moz-appearance: textfield;
   flex: 1 1 auto;
+  z-index: 1;
   width: 0;
   border-right: none;
   border-left: none;
@@ -22,6 +23,9 @@
   flex: 0 0 auto;
   font-weight: 900;
   font-family: 'Font Awesome 6 Free Solid';
+}
+.QuantityInput button:active {
+  transform: none;
 }
 .QuantityInput-minus {
   border-right: none;

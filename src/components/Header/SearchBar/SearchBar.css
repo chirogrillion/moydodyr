@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: baseline;
   background-color: white;
-  box-shadow: 0 1px 1px 0 var(--clr-shadow);
+  box-shadow: 0 1px 2px 0 var(--clr-shadow);
 }
 .SearchBar-container span {
   padding-left: 20px;

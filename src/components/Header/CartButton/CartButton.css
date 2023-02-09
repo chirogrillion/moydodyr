@@ -1,8 +1,5 @@
 .CartButton {
   position: relative;
-  color: white;
-  background-color: var(--clr-main);
-  box-shadow: 0 1px 1px 0 var(--clr-shadow);
 }
 .CartButton::before {
   content: '\f07a';
@@ -16,6 +13,6 @@
   padding: 0 5.5px;
   font-weight: 700;
   color: white;
-  background-color: var(--clr-destr);
+  background-color: var(--clr-red);
   box-shadow: 1px 1px 1px 0 var(--clr-shadow);
 }

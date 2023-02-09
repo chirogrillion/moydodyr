@@ -8,7 +8,7 @@ function CartButton() {
   const cartNumber = Object.values(cart).reduce((r, v) => r + v, 0);
   return (
     <button
-      className="CartButton"
+      className="CartButton button-filled"
       type="button"
     >
       Корзина

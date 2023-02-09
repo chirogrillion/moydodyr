@@ -5,7 +5,7 @@ import './AccountButton.css';
 function AccountButton() {
   return (
     <button
-      className="AccountButton"
+      className="AccountButton button-filled"
       type="button"
     >Войти</button>
   );

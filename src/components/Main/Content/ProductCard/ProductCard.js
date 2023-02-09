@@ -19,16 +19,14 @@ const ProductCard = props => {
           <div className="ProductCard-discount">{props.percentOff}</div>
         ) : null}
       </div>
-      {
+      <div className="ProductCard-price_wrapper">{
         props.percentOff > 0
           ? <React.Fragment>
-            <div className="ProductCard-price_wrapper">
-              <p className="ProductCard-old_price">{formatPrice(props.price)}</p>
-              <p className="ProductCard-price">{formatPrice(props.price * (100 - props.percentOff) / 100)}</p>
-            </div>
+            <p className="ProductCard-old_price">{formatPrice(props.price)}</p>
+            <p className="ProductCard-price">{formatPrice(props.price * (100 - props.percentOff) / 100)}</p>
           </React.Fragment>
           : <p className="ProductCard-price">{formatPrice(props.price)}</p>
-      }
+      }</div>
       <h3>{props.name}</h3>
       <AddToCart productId={props.code}/>
     </article>

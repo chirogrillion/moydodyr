@@ -20,14 +20,14 @@ const FavoriteToggle = props => {
       isFavorite === -1
         ? <button
           key={1}
-          className="FavoriteToggle-is_not_fav"
+          className="FavoriteToggle-hiding"
           type="button"
           title="Добавить в Избранное"
           onClick={add}
         >&#xf004;</button>
         : <button
           key={1}
-          className="FavoriteToggle-is_fav"
+          className="button-red"
           type="button"
           title="Удалить из Избранного"
           onClick={remove}
