@@ -28,7 +28,15 @@ const ProductCard = props => {
           : <p className="ProductCard-price">{formatPrice(props.price)}</p>
       }</div>
       <h3>{props.name}</h3>
-      <AddToCart productId={props.code}/>
+      {props.unitsAvailable > 0 ? <React.Fragment>
+        <p className="ProductCard-availability-in_stock">В наличии</p>
+        <AddToCart
+          productId={props.code}
+          productUnitsAvailable={props.unitsAvailable}
+        />
+      </React.Fragment> : (
+        <p className="ProductCard-availability-out_of_stock">Нет в наличии</p>
+      )}
     </article>
   );
 

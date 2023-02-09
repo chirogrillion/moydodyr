@@ -8,9 +8,11 @@ const QuantityInput = props => {
 
   const dispatch = useDispatch();
 
-  const notifyStore = (num) => {dispatch(
-    changeProductQuantity({code: props.productId, quantity: num})
-  )};
+  const notifyStore = (num) => {
+    if (num <= props.productUnitsAvailable) {dispatch(
+      changeProductQuantity({code: props.productId, quantity: num})
+    )}
+  };
 
   const quantityChanged = eo => notifyStore(parseInt(eo.target.value));
 
@@ -37,11 +39,16 @@ const QuantityInput = props => {
         type="number"
         min={0}
         step={1}
+        max={props.productUnitsAvailable}
         value={props.productQuantity}
         onChange={quantityChanged}
       />
       <button
-        className="QuantityInput-plus"
+        className={
+          props.productQuantity >= props.productUnitsAvailable
+            ? 'QuantityInput-plus button-disabled'
+            : 'QuantityInput-plus'
+        }
         type="button"
         onClick={quantityPlus1}
       >+</button>

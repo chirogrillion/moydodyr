@@ -22,6 +22,7 @@ const AddToCart = props => {
       productQuantity
         ? <QuantityInput
           productId={props.productId}
+          productUnitsAvailable={props.productUnitsAvailable}
           productQuantity={productQuantity}
         />
         : <button

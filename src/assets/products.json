@@ -5,6 +5,7 @@
     "imgURL": "https://iili.io/HE9OoeS.jpg",
     "price": 32.94,
     "percentOff": 0,
+    "unitsAvailable": 9,
     "brand": 100,
     "form": 6,
     "filters-1100": {
@@ -18,6 +19,7 @@
     "imgURL": "https://iili.io/HEdqaTu.jpg",
     "price": 7.80,
     "percentOff": 0,
+    "unitsAvailable": 29,
     "brand": 103,
     "form": 6,
     "filters-1100": {
@@ -31,6 +33,7 @@
     "imgURL": "https://iili.io/HEdTiBe.jpg",
     "price": 26.54,
     "percentOff": 0,
+    "unitsAvailable": 11,
     "brand": 104,
     "form": 4,
     "filters-1100": {
@@ -44,6 +47,7 @@
     "imgURL": "https://iili.io/HEddoLN.jpg",
     "price": 10.44,
     "percentOff": 0,
+    "unitsAvailable": 24,
     "brand": 101,
     "form": 4
   },
@@ -53,6 +57,7 @@
     "imgURL": "https://iili.io/HEdFU37.jpg",
     "price": 17.00,
     "percentOff": 15,
+    "unitsAvailable": 5,
     "brand": 102,
     "form": 8
   }

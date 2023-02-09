@@ -18,6 +18,7 @@ function Content() {
           imgURL={v.imgURL}
           price={v.price}
           percentOff={v.percentOff}
+          unitsAvailable={v.unitsAvailable}
         />
       )}
     </section>
