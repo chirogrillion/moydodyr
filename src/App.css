@@ -52,6 +52,7 @@ button {
 }
 button::before {
   padding-right: 10px;
+  font-weight: 900;
   line-height: 1em;
   font-family: 'Font Awesome 6 Free Solid';
 }

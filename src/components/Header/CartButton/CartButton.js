@@ -6,7 +6,6 @@ import './CartButton.css';
 function CartButton() {
   const cart = useSelector(state => state.cart);
   const cartNumber = Object.values(cart).reduce((r, v) => r + v, 0);
-  console.log(cartNumber);
   return (
     <button
       className="CartButton"
