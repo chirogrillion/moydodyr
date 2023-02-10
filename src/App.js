@@ -1,5 +1,6 @@
 import React from 'react';
 import {Provider} from 'react-redux';
+import {BrowserRouter} from 'react-router-dom';
 
 import {store} from './store/store';
 
@@ -12,9 +13,11 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <Provider store={store}>
-      <Header/>
-      <Main/>
-      <Footer/>
+      <BrowserRouter>
+        <Header/>
+        <Main/>
+        <Footer/>
+      </BrowserRouter>
     </Provider>
   );
 }

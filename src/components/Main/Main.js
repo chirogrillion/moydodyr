@@ -1,17 +1,18 @@
 import React from 'react';
+import {Routes, Route} from 'react-router-dom';
 
 import './Main.css';
 
-import Sidebar from './Sidebar/Sidebar';
-import Content from './Content/Content';
+import PageCatalog from '../../pages/Catalog';
 
 function Main() {
   return (
     <main className="Main">
       <div className="Main-container">
-        <header><h1>Каталог</h1></header>
-        <Sidebar/>
-        <Content/>
+        <Routes>
+          <Route path="/" element={<PageCatalog/>}/>
+          <Route path="/catalog/:ctgrid" element={<PageCatalog/>}/>
+        </Routes>
       </div>
     </main>
   );
