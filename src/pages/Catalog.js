@@ -9,7 +9,6 @@ const PageCatalog = () => {
 
   const params = useParams();
   const category = params.ctgrid ? Number(params.ctgrid) : 0;
-  console.log(category);
 
   return (
     <React.Fragment>
