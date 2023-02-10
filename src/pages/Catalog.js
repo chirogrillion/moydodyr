@@ -12,7 +12,7 @@ const PageCatalog = () => {
 
   return (
     <React.Fragment>
-      <PageHeading categoryId={category}/>
+      <PageHeading pageId={category}/>
       <Sidebar/>
       <Content/>
     </React.Fragment>
