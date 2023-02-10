@@ -17,6 +17,7 @@
 }
 .SearchBar-container span {
   padding-left: 20px;
+  font-weight: 900;
   line-height: 1.05em;
   font-family: 'Font Awesome 6 Free Solid';
 }

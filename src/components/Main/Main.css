@@ -1,5 +1,5 @@
 .Main {
-  background-color: whitesmoke;
+  background-color: rgb(241, 241, 241);
 }
 .Main-container {
   position: relative;
@@ -7,11 +7,10 @@
   max-width: 1280px;
   display: grid;
   grid-template: auto auto / 340px 1fr;
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(251, 251, 251);
 }
-.Main-container > header {
+.Main-container .PageHeading {
   grid-area: 1 / 1 / 2 / 3;
-  padding: 20px 40px;
 }
 .Main-container .Sidebar {
   grid-area: 2 / 1 / 3 / 2;
