@@ -20,12 +20,14 @@ const CatalogTable = props => {
     <section className="CatalogTable">
       <header>
         <p className="CatalogTable-total_number">
-          Товаров всего: {props.products.length}
+          Товаров всего: <span style={{fontWeight: 500}}>
+            {props.products.length}
+          </span>
         </p>
         <div className="CatalogTable-products_per_page">
           <p>Товаров на странице:</p>
           <div className="CatalogTable-switcher">
-            <label>
+            <label className={prodsPerPage === 20 ? 'current' : null}>
               <input
                 type="radio"
                 name="products_per_page"
@@ -34,7 +36,7 @@ const CatalogTable = props => {
                 onChange={prodsPerPageChanged}
               />20
             </label>
-            <label>
+            <label className={prodsPerPage === 40 ? 'current' : null}>
               <input
                 type="radio"
                 name="products_per_page"
@@ -43,7 +45,7 @@ const CatalogTable = props => {
                 onChange={prodsPerPageChanged}
               />40
             </label>
-            <label>
+            <label className={prodsPerPage === 60 ? 'current' : null}>
               <input
                 type="radio"
                 name="products_per_page"
