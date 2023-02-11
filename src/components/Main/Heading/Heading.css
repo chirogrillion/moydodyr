@@ -1,33 +1,33 @@
-.PageHeading {
+.Heading {
   padding: 20px;
 }
-.PageHeading-breadcrumbs {
+.Heading-breadcrumbs {
   margin: 20px 20px 0;
   padding: 0;
   opacity: 65%;
   list-style-type: none;
 }
-.PageHeading-breadcrumbs li {
+.Heading-breadcrumbs li {
   display: inline-block;
   margin-right: 20px;
   font-weight: 500;
 }
-.PageHeading-breadcrumbs li:last-child {
+.Heading-breadcrumbs li:last-child {
   margin-right: 0;
 }
-.PageHeading-breadcrumbs li::after {
+.Heading-breadcrumbs li::after {
   margin-left: 20px;
   content: '\f054';
   font-weight: 900;
   line-height: 1.05em;
   font-family: 'Font Awesome 6 Free Solid';
 }
-.PageHeading h1 {
+.Heading h1 {
   margin: 17px 20px 0;
   font-weight: 900;
   line-height: normal;
 }
-.PageHeading-subcategories {
+.Heading-subcategories {
   margin: 20px 0 0;
   padding: 0;
   display: flex;
@@ -35,7 +35,7 @@
   gap: 20px;
   list-style-type: none;
 }
-.PageHeading-subcategories a {
+.Heading-subcategories a {
   display: inline-block;
   border-radius: 20px;
   padding: 15px 20px;
@@ -44,7 +44,11 @@
   box-shadow: 0 1px 2px 1px var(--clr-shadow-15);
   transition: 100ms;
 }
-.PageHeading-subcategories a:hover {
+.Heading-subcategories a:hover {
   text-decoration: none;
   box-shadow: 0 2px 4px 1px var(--clr-shadow-25);
+}
+.Heading-subcategories a:active {
+  transform: translate(0, 2px);
+  box-shadow: 0 1px 2px 1px var(--clr-shadow-15);
 }

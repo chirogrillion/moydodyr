@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './Sidebar.css';
+import './Filters.css';
 
-function Sidebar() {
+function Filters() {
   return (
-    <aside className="Sidebar">
+    <aside className="Filters">
       <header><h2>Фильтры</h2></header>
       <main>
         <h2>Съешь же ещё этих мягких французских булок, да выпей чаю.</h2>
@@ -41,4 +41,4 @@ function Sidebar() {
   );
 };
 
-export default Sidebar;
+export default Filters;

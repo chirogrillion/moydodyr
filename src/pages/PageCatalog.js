@@ -1,9 +1,8 @@
 import React from 'react';
 import {useParams} from 'react-router-dom';
 
-import PageHeading from '../components/Main/PageHeading/PageHeading';
-import Sidebar from '../components/Main/Sidebar/Sidebar';
-import Content from '../components/Main/Content/Content';
+import Heading from '../components/Main/Heading/Heading';
+import Catalog from '../components/Main/Catalog/Catalog';
 
 const PageCatalog = () => {
 
@@ -12,9 +11,8 @@ const PageCatalog = () => {
 
   return (
     <React.Fragment>
-      <PageHeading pageId={category}/>
-      <Sidebar/>
-      <Content/>
+      <Heading pageId={category}/>
+      <Catalog categoryId={category}/>
     </React.Fragment>
   );
 

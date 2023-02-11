@@ -3,7 +3,7 @@ import {useSelector, useDispatch} from 'react-redux';
 
 import './FavoriteToggle.css';
 
-import {addToFavorites, removeFromFavorites} from '../../../../../store/favorites';
+import {addToFavorites, removeFromFavorites} from '../../../../store/favorites';
 
 const FavoriteToggle = props => {
 

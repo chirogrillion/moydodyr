@@ -4,7 +4,7 @@ import {useSelector, useDispatch} from 'react-redux';
 import './AddToCart.css';
 
 import QuantityInput from '../../QuantityInput/QuantityInput';
-import {changeProductQuantity} from '../../../../../store/cart';
+import {changeProductQuantity} from '../../../../store/cart';
 
 const AddToCart = props => {
 

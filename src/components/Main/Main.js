@@ -3,7 +3,7 @@ import {Routes, Route} from 'react-router-dom';
 
 import './Main.css';
 
-import PageCatalog from '../../pages/Catalog';
+import PageCatalog from '../../pages/PageCatalog';
 
 function Main() {
   return (

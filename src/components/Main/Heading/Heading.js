@@ -1,11 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-import './PageHeading.css';
+import './Heading.css';
 
 const categories = require('../../../assets/categories.json');
 
-const PageHeading = props => {
+const Heading = props => {
 
   const getPath = (arr) => {
     let path = [];
@@ -57,10 +57,10 @@ const PageHeading = props => {
 
   return (
 
-    <header className="PageHeading">
+    <header className="Heading">
 
       {breadcrumbs.length > 0 ? (
-        <ul className="PageHeading-breadcrumbs">
+        <ul className="Heading-breadcrumbs">
           {getLayout(breadcrumbs)}
         </ul>
       ) : null}
@@ -68,7 +68,7 @@ const PageHeading = props => {
       <h1>{thisPage.name}</h1>
 
       {thisPage.sub ? (
-        <ul className="PageHeading-subcategories">
+        <ul className="Heading-subcategories">
           {getLayout(thisPage.sub)}
         </ul>
       ) : null}
@@ -79,4 +79,4 @@ const PageHeading = props => {
 
 };
 
-export default PageHeading;
+export default Heading;

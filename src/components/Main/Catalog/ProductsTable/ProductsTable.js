@@ -1,15 +1,15 @@
 import React from 'react';
 
-import './Content.css';
+import './ProductsTable.css';
 
-import ProductCard from '../Content/ProductCard/ProductCard';
+import ProductCard from '../../ProductCard/ProductCard';
 
-const products = require('../../../assets/products.json');
+const products = require('../../../../assets/products.json');
 
-function Content() {
+function ProductsTable() {
 
   return (
-    <section className="Content">
+    <section className="ProductsTable">
       {products.map(v =>
         <ProductCard
           key={v.code}
@@ -26,4 +26,4 @@ function Content() {
 
 };
 
-export default Content;
+export default ProductsTable;
