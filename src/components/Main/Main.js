@@ -3,15 +3,15 @@ import {Routes, Route} from 'react-router-dom';
 
 import './Main.css';
 
-import PageCatalog from '../../pages/PageCatalog';
+import CatalogPage from '../../pages/CatalogPage';
 
 function Main() {
   return (
     <main className="Main">
       <div className="Main-container">
         <Routes>
-          <Route path="/" element={<PageCatalog/>}/>
-          <Route path="/catalog/:ctgrid" element={<PageCatalog/>}/>
+          <Route path="/" element={<CatalogPage/>}/>
+          <Route path="/catalog/:ctgrid/*" element={<CatalogPage/>}/>
         </Routes>
       </div>
     </main>

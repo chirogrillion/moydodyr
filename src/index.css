@@ -8,6 +8,7 @@ body {
   --clr-shadow-25: rgba(20, 39, 82, 0.25);
   --clr-shadow-15: rgba(20, 39, 82, 0.15);
   --clr-accent: rgb(0, 173, 231);
+  --clr-accent-2: rgb(250, 253, 255);
   --clr-yellow: rgb(246, 180, 4);
   --clr-red: rgb(226, 30, 35);
   --clr-red-25: rgba(226, 30, 35, 0.25);

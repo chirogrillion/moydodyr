@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './Filters.css';
+import './CatalogFilters.css';
 
-function Filters() {
+function CatalogFilters() {
   return (
-    <aside className="Filters">
+    <aside className="CatalogFilters">
       <header><h2>Фильтры</h2></header>
       <main>
         <h2>Съешь же ещё этих мягких французских булок, да выпей чаю.</h2>
@@ -41,4 +41,4 @@ function Filters() {
   );
 };
 
-export default Filters;
+export default CatalogFilters;

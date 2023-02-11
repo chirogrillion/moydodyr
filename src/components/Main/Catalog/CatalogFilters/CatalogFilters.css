@@ -1,4 +1,4 @@
-.Filters {
+.CatalogFilters {
   align-self: start;
   position: sticky;
   top: 20px;
@@ -7,28 +7,28 @@
   background-color: white;
   box-shadow: 0 1px 2px 1px var(--clr-shadow-15);
 }
-.Filters header,
-.Filters footer {
+.CatalogFilters header,
+.CatalogFilters footer {
   margin: 0 20px;
   padding: 20px 0;
   background-color: white;
 }
-.Filters header {
+.CatalogFilters header {
   position: sticky;
   top: 0;
-  border-bottom: solid 1px lightgray;
+  border-bottom: solid 1px var(--clr-main-15);
 }
-.Filters header h2 {
+.CatalogFilters header h2 {
   margin: 0;
   text-align: center;
 }
-.Filters main {
+.CatalogFilters main {
   padding: 0 20px;
 }
-.Filters footer {
+.CatalogFilters footer {
   position: sticky;
   bottom: 0;
-  border-top: solid 1px lightgray;
+  border-top: solid 1px var(--clr-main-15);
   display: flex;
   justify-content: space-between;
 }
