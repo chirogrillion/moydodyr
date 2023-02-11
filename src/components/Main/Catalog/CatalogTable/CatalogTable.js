@@ -7,14 +7,19 @@ import ProductCard from '../../ProductCard/ProductCard';
 
 const CatalogTable = props => {
 
-  const [prodsPerPage, setProdsPerPage] = useState(20);
+  const [prodsPerPage, setProdsPerPage] = useState(2);
 
   const params = useParams();
-  const page = params.page ? Number(params.page) : 1;
+  const pagesNumber = Math.ceil(props.products.length / prodsPerPage);
+  const page = params.page ? (Number(params.page) > pagesNumber ? 1 : Number(params.page)) : 1;
 
   const prodsPerPageChanged = eo => setProdsPerPage(Number(eo.target.value));
 
-  console.log(prodsPerPage);
+  const start = (page - 1) * prodsPerPage;
+  const end = start + prodsPerPage;
+  const displayedProducts = props.products.slice(start, end);
+
+  console.log(pagesNumber);
 
   return (
     <section className="CatalogTable">
@@ -58,7 +63,7 @@ const CatalogTable = props => {
         </div>
       </header>
       <main>
-        {props.products.map(v =>
+        {displayedProducts.map(v =>
           <ProductCard
             key={v.code}
             code={v.code}
