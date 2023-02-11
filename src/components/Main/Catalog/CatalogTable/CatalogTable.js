@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {useParams} from 'react-router-dom';
+import {useParams, NavLink} from 'react-router-dom';
 
 import './CatalogTable.css';
 
@@ -10,23 +10,55 @@ const CatalogTable = props => {
   const [prodsPerPage, setProdsPerPage] = useState(2);
 
   const params = useParams();
-  const pagesNumber = Math.ceil(props.products.length / prodsPerPage);
+  const productsNumber = props.products.length;
+  const pagesNumber = Math.ceil(productsNumber / prodsPerPage);
   const page = params.page ? (Number(params.page) > pagesNumber ? 1 : Number(params.page)) : 1;
 
   const prodsPerPageChanged = eo => setProdsPerPage(Number(eo.target.value));
 
   const start = (page - 1) * prodsPerPage;
-  const end = start + prodsPerPage;
+  const end0 = start + prodsPerPage;
+  const end = end0 > productsNumber ? productsNumber : end0;
   const displayedProducts = props.products.slice(start, end);
 
+  const categoryId = props.categoryId;
+
   console.log(pagesNumber);
+
+  const getPagination = () => {
+    let links = [];
+    links.push(
+      <NavLink
+        key={0}
+        to={`/catalog/${categoryId}/${page - 1}`}
+        className={page === 1 ? 'arrow disabled' : 'arrow'}
+      >&#xf060;</NavLink>
+    );
+    for (let i = 0; i < pagesNumber; i++) {
+      links.push(
+        <NavLink
+          key={i + 1}
+          to={`/catalog/${categoryId}/${i + 1}`}
+          className={i + 1 === page ? 'current' : null}
+        >{i + 1}</NavLink>
+      );
+    }
+    links.push(
+      <NavLink
+        key={pagesNumber + 1}
+        to={`/catalog/${categoryId}/${page + 1}`}
+        className={page === pagesNumber ? 'arrow disabled' : 'arrow'}
+      >&#xf061;</NavLink>
+    );
+    return links;
+  };
 
   return (
     <section className="CatalogTable">
       <header>
         <p className="CatalogTable-total_number">
           Товаров всего: <span style={{fontWeight: 500}}>
-            {props.products.length}
+            {productsNumber}
           </span>
         </p>
         <div className="CatalogTable-products_per_page">
@@ -75,7 +107,18 @@ const CatalogTable = props => {
           />
         )}
       </main>
-      <footer></footer>
+      {productsNumber < 1 ? null : (
+        <footer>
+          <p className="CatalogTable-displayed_products">
+            Показаны товары: <span style={{fontWeight: 500}}>
+              {start + 1}&mdash;{end}
+            </span>
+          </p>
+          <div className="CatalogTable-pagination">
+            {getPagination()}
+          </div>
+        </footer>
+      )}
     </section>
   );
 

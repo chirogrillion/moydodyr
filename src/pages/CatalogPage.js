@@ -80,7 +80,10 @@ const CatalogPage = () => {
         path={categoryPath}
         listLength={productsNumber}
       />
-      <Catalog list={productsList}/>
+      <Catalog
+        categoryId={categoryNumber}
+        list={productsList}
+      />
     </React.Fragment>
   );
 

@@ -18,8 +18,8 @@ class Catalog extends React.PureComponent {
       <section className="Catalog">
         <CatalogFilters categoryId={this.props.categoryId}/>
         <Routes>
-          <Route path="" element={<CatalogTable products={this.props.list}/>}/>
-          <Route path=":page" element={<CatalogTable products={this.props.list}/>}/>
+          <Route path="" element={<CatalogTable products={this.props.list} categoryId={this.props.categoryId}/>}/>
+          <Route path=":page" element={<CatalogTable products={this.props.list} categoryId={this.props.categoryId}/>}/>
         </Routes>
       </section>
     );
