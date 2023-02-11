@@ -22,10 +22,22 @@
   line-height: 1.05em;
   font-family: 'Font Awesome 6 Free Solid';
 }
-.Heading h1 {
+.Heading-title {
   margin: 17px 20px 0;
+}
+.Heading-title h1 {
+  display: inline;
+  padding-right: 20px;
   font-weight: 900;
   line-height: normal;
+}
+.Heading-title h1:last-child {
+  padding-right: 0;
+}
+.Heading-title > span {
+  opacity: 50%;
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 .Heading-subcategories {
   margin: 27px 0 0;

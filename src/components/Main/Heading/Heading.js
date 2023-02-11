@@ -6,7 +6,7 @@ import './Heading.css';
 const Heading = props => {
 
   let breadcrumbs = [...props.path];
-  const thisPage = breadcrumbs.pop();
+  const currPage = breadcrumbs.pop();
 
   const getLayout = arr => arr.map(v => <li key={v.code}>
     <Link to={`/catalog/${v.code}`}>{v.name}</Link>
@@ -22,11 +22,16 @@ const Heading = props => {
         </ul>
       ) : null}
 
-      <h1>{thisPage.name}</h1>
+      <div className="Heading-title">
+        <h1>{currPage.name}</h1>
+        {props.listLength ? (
+          <span>{props.listLength}</span>
+        ) : null}
+      </div>
 
-      {thisPage.sub ? (
+      {currPage.sub ? (
         <ul className="Heading-subcategories">
-          {getLayout(thisPage.sub)}
+          {getLayout(currPage.sub)}
         </ul>
       ) : null}
 

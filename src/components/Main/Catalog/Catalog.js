@@ -10,7 +10,7 @@ import CatalogTable from './CatalogTable/CatalogTable';
 class Catalog extends React.PureComponent {
 
   static propTypes = {
-    products: PropTypes.array.isRequired,
+    list: PropTypes.array.isRequired,
   };
 
   render() {
@@ -18,8 +18,8 @@ class Catalog extends React.PureComponent {
       <section className="Catalog">
         <CatalogFilters categoryId={this.props.categoryId}/>
         <Routes>
-          <Route path="" element={<CatalogTable products={this.props.products}/>}/>
-          <Route path=":page" element={<CatalogTable products={this.props.products}/>}/>
+          <Route path="" element={<CatalogTable products={this.props.list}/>}/>
+          <Route path=":page" element={<CatalogTable products={this.props.list}/>}/>
         </Routes>
       </section>
     );
