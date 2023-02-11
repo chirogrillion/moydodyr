@@ -10,7 +10,7 @@ function Main() {
     <main className="Main">
       <div className="Main-container">
         <Routes>
-          <Route path="/" element={<CatalogPage/>}/>
+          <Route path="/*" element={<CatalogPage/>}/>
           <Route path="/catalog/:ctgrid/*" element={<CatalogPage/>}/>
         </Routes>
       </div>

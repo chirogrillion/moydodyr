@@ -1,64 +1,217 @@
 [
   {
-    "code": 1101001,
-    "name": "Стиральный порошок Persil Color Свежесть от Vernel (3 кг)",
-    "imgURL": "https://iili.io/HE9OoeS.jpg",
-    "price": 32.94,
-    "percentOff": 0,
-    "unitsAvailable": 9,
-    "brand": 100,
-    "form": 6,
-    "filters-1100": {
-      "11001": 1,
-      "11002": 2
-    }
-  },
-  {
-    "code": 1102001,
-    "name": "Пятновыводитель и отбеливатель Vanish (500 г)",
-    "imgURL": "https://iili.io/HEdqaTu.jpg",
-    "price": 7.80,
-    "percentOff": 0,
-    "unitsAvailable": 29,
-    "brand": 103,
-    "form": 6,
-    "filters-1100": {
-      "11001": 0,
-      "11002": 1
-    }
-  },
-  {
-    "code": 1103001,
-    "name": "Кондиционер для детского белья Synergetic (2,75 л)",
-    "imgURL": "https://iili.io/HEdTiBe.jpg",
-    "price": 26.54,
-    "percentOff": 0,
-    "unitsAvailable": 11,
-    "brand": 104,
-    "form": 4,
-    "filters-1100": {
-      "11001": 0,
-      "11002": 4
-    }
-  },
-  {
-    "code": 1201001,
-    "name": "Средство для мытья посуды Fairy Pure & Clean (450 мл)",
-    "imgURL": "https://iili.io/HEddoLN.jpg",
-    "price": 10.44,
-    "percentOff": 0,
-    "unitsAvailable": 24,
-    "brand": 101,
-    "form": 4
-  },
-  {
-    "code": 1202001,
-    "name": "Таблетки для посудомоечной машины Finish Classic (28 шт.)",
-    "imgURL": "https://iili.io/HEdFU37.jpg",
-    "price": 17.00,
-    "percentOff": 15,
-    "unitsAvailable": 5,
-    "brand": 102,
-    "form": 8
+    "code": 0, "name": "Каталог товаров", "sub": [
+      {
+        "code": 1000, "name": "Бытовая химия", "sub": [
+          {
+            "code": 1100, "name": "Средства для стирки", "sub": [
+              {
+                "code": 1101, "name": "Стиральные порошки, гели, капсулы", "content": [
+                  {
+                    "code": 1101001,
+                    "name": "Стиральный порошок Persil Color Свежесть от Vernel (3 кг)",
+                    "imgURL": "https://iili.io/HE9OoeS.jpg",
+                    "price": 32.94,
+                    "percentOff": 0,
+                    "unitsAvailable": 9,
+                    "brand": 100,
+                    "form": 6,
+                    "filters-1100": {
+                      "11001": 1,
+                      "11002": 2
+                    }
+                  }
+                ]
+              },
+              {
+                "code": 1102, "name": "Отбеливатели и пятновыводители", "content": [
+                  {
+                    "code": 1102001,
+                    "name": "Пятновыводитель и отбеливатель Vanish (500 г)",
+                    "imgURL": "https://iili.io/HEdqaTu.jpg",
+                    "price": 7.80,
+                    "percentOff": 0,
+                    "unitsAvailable": 29,
+                    "brand": 103,
+                    "form": 6,
+                    "filters-1100": {
+                      "11001": 0,
+                      "11002": 1
+                    }
+                  }
+                ]
+              },
+              {
+                "code": 1103, "name": "Кондиционеры и ополаскиватели", "content": [
+                  {
+                    "code": 1103001,
+                    "name": "Кондиционер для детского белья Synergetic (2,75 л)",
+                    "imgURL": "https://iili.io/HEdTiBe.jpg",
+                    "price": 26.54,
+                    "percentOff": 0,
+                    "unitsAvailable": 11,
+                    "brand": 104,
+                    "form": 4,
+                    "filters-1100": {
+                      "11001": 0,
+                      "11002": 4
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": 1200, "name": "Средства для мытья посуды", "sub": [
+              {
+                "code": 1201, "name": "Средства для мытья посуды вручную", "content": [
+                  {
+                    "code": 1201001,
+                    "name": "Средство для мытья посуды Fairy Pure & Clean (450 мл)",
+                    "imgURL": "https://iili.io/HEddoLN.jpg",
+                    "price": 10.44,
+                    "percentOff": 0,
+                    "unitsAvailable": 24,
+                    "brand": 101,
+                    "form": 4
+                  }
+                ]
+              },
+              {
+                "code": 1202, "name": "Средства для мытья посуды в посудомоечной машине", "content": [
+                  {
+                    "code": 1202001,
+                    "name": "Таблетки для посудомоечной машины Finish Classic (28 шт.)",
+                    "imgURL": "https://iili.io/HEdFU37.jpg",
+                    "price": 17.00,
+                    "percentOff": 15,
+                    "unitsAvailable": 5,
+                    "brand": 102,
+                    "form": 8
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": 1300, "name": "Средства для ухода за бытовой техникой", "sub": [
+              {
+                "code": 1301, "name": "Средства против накипи", "content": [
+                  
+                ]
+              },
+              {
+                "code": 1302, "name": "Средства для чистки стиральных и посудомоечных машин", "content": [
+                  
+                ]
+              },
+              {
+                "code": 1303, "name": "Средства для чистки утюгов", "content": [
+                  
+                ]
+              }
+            ]
+          },
+          {
+            "code": 1400, "name": "Чистящие и моющие средства", "sub": [
+              {
+                "code": 1401, "name": "Универсальные средства", "content": [
+                  
+                ]
+              },
+              {
+                "code": 1402, "name": "Средства для кухни", "content": [
+                  
+                ]
+              },
+              {
+                "code": 1403, "name": "Средства для ванной и туалета", "content": [
+                  
+                ]
+              },
+              {
+                "code": 1404, "name": "Средства для стёкол и зеркал", "content": [
+                  
+                ]
+              },
+              {
+                "code": 1405, "name": "Средства для устранения засоров в трубах", "content": [
+                  
+                ]
+              },
+              {
+                "code": 1406, "name": "Чистящие средства для мебели", "content": [
+                  
+                ]
+              },
+              {
+                "code": 1407, "name": "Чистящие средства для ковров", "content": [
+                  
+                ]
+              },
+              {
+                "code": 1408, "name": "Моющие средства для полов", "content": [
+                  
+                ]
+              }
+            ]
+          },
+          {
+            "code": 1500, "name": "Ароматизаторы и освежители воздуха", "content": [
+              
+            ]
+          }
+        ]
+      },
+      {
+        "code": 2000, "name": "Хозяйственные товары", "sub": [
+          {
+            "code": 2001, "name": "Перчатки", "content": [
+              
+            ]
+          },
+          {
+            "code": 2002, "name": "Губки, салфетки, полотенца, тряпки", "content": [
+              
+            ]
+          },
+          {
+            "code": 2003, "name": "Стекломои, скребки, водосгоны", "content": [
+              
+            ]
+          },
+          {
+            "code": 2004, "name": "Швабры и насадки", "content": [
+              
+            ]
+          },
+          {
+            "code": 2005, "name": "Совки и щётки для пола", "content": [
+              
+            ]
+          },
+          {
+            "code": 2006, "name": "Щётки, ёршики, вантузы", "content": [
+              
+            ]
+          },
+          {
+            "code": 2007, "name": "Тазы и вёдра", "content": [
+              
+            ]
+          },
+          {
+            "code": 2008, "name": "Мусорные вёдра и баки", "content": [
+              
+            ]
+          },
+          {
+            "code": 2009, "name": "Мешки для мусора", "content": [
+              
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

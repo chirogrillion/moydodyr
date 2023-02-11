@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Routes, Route} from 'react-router-dom';
 
 import './Catalog.css';
@@ -6,20 +7,24 @@ import './Catalog.css';
 import CatalogFilters from './CatalogFilters/CatalogFilters';
 import CatalogTable from './CatalogTable/CatalogTable';
 
-const products = require('../../../assets/products.json');
+class Catalog extends React.PureComponent {
 
-const Catalog = props => {
+  static propTypes = {
+    products: PropTypes.array.isRequired,
+  };
 
-  return (
-    <section className="Catalog">
-      <CatalogFilters categoryId={props.categoryId}/>
-      <Routes>
-        <Route path="" element={<CatalogTable products={products}/>}/>
-        <Route path=":page" element={<CatalogTable products={products}/>}/>
-      </Routes>
-    </section>
-  );
+  render() {
+    return (
+      <section className="Catalog">
+        <CatalogFilters categoryId={this.props.categoryId}/>
+        <Routes>
+          <Route path="" element={<CatalogTable products={this.props.products}/>}/>
+          <Route path=":page" element={<CatalogTable products={this.props.products}/>}/>
+        </Routes>
+      </section>
+    );
+  };
 
-};
+}
 
 export default Catalog;
