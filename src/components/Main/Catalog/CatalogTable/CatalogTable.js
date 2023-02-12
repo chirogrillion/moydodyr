@@ -1,5 +1,6 @@
-import React, {useState} from 'react';
-import {useParams, NavLink} from 'react-router-dom';
+import React from 'react';
+import PropTypes from 'prop-types';
+import {useParams, Link} from 'react-router-dom';
 
 import './CatalogTable.css';
 
@@ -7,95 +8,106 @@ import ProductCard from '../../ProductCard/ProductCard';
 
 const CatalogTable = props => {
 
-  const [prodsPerPage, setProdsPerPage] = useState(2);
-
   const params = useParams();
-  const productsNumber = props.products.length;
-  const pagesNumber = Math.ceil(productsNumber / prodsPerPage);
-  const page = params.page ? (Number(params.page) > pagesNumber ? 1 : Number(params.page)) : 1;
+  const prodsNum = props.prodsList.length;
+  const prodsPerPage = props.prodsPerPage;
+  const pagesNum = Math.ceil(prodsNum / prodsPerPage);
+  const page = params.page ? (
+    Number(params.page) > pagesNum ? 1 : Number(params.page)
+  ) : 1;
 
-  const prodsPerPageChanged = eo => setProdsPerPage(Number(eo.target.value));
+  const prodsPerPageValues = [20, 40, 60];
+
+  const prodsPerPageChanged = eo => {
+    props.cbProdsPerPageChanged(Number(eo.target.value))
+  };
+
+  const getSwitcherLayout = arr => {
+    return arr.map((v, i) => (
+      <label
+        key={i}
+        className={prodsPerPage === v ? 'current' : null}
+      >
+        <input
+          type="radio"
+          name="products_per_page"
+          value={v}
+          checked={prodsPerPage === v}
+          onChange={prodsPerPageChanged}
+        />
+        {v}
+      </label>
+    ));
+  };
 
   const start = (page - 1) * prodsPerPage;
-  const end0 = start + prodsPerPage;
-  const end = end0 > productsNumber ? productsNumber : end0;
-  const displayedProducts = props.products.slice(start, end);
+  const _end = start + prodsPerPage;
+  const end = _end > prodsNum ? prodsNum : _end;
+  const displayedProds = props.prodsList.slice(start, end);
 
-  const categoryId = props.categoryId;
+  const scrollToTop = () => window.scrollTo({
+    top: 0, left: 0, behavior: 'smooth',
+  });
 
-  console.log(pagesNumber);
+  const getPaginationLayout = () => {
 
-  const getPagination = () => {
     let links = [];
-    links.push(
-      <NavLink
-        key={0}
-        to={`/catalog/${categoryId}/${page - 1}`}
-        className={page === 1 ? 'arrow disabled' : 'arrow'}
-      >&#xf060;</NavLink>
-    );
-    for (let i = 0; i < pagesNumber; i++) {
+
+    if (page !== 1) {
       links.push(
-        <NavLink
-          key={i + 1}
-          to={`/catalog/${categoryId}/${i + 1}`}
-          className={i + 1 === page ? 'current' : null}
-        >{i + 1}</NavLink>
+        <Link
+          key={0}
+          to={`${props.url}/${page - 1}`}
+          className="arrow"
+          onClick={scrollToTop}
+        >&#xf060;</Link>
       );
     }
-    links.push(
-      <NavLink
-        key={pagesNumber + 1}
-        to={`/catalog/${categoryId}/${page + 1}`}
-        className={page === pagesNumber ? 'arrow disabled' : 'arrow'}
-      >&#xf061;</NavLink>
-    );
+
+    for (let i = 0; i < pagesNum; i++) {
+      links.push(
+        <Link
+          key={i + 1}
+          to={`${props.url}/${i + 1}`}
+          className={i + 1 === page ? 'current' : null}
+          onClick={scrollToTop}
+        >{i + 1}</Link>
+      );
+    }
+
+    if (page !== pagesNum) {
+      links.push(
+        <Link
+          key={pagesNum + 1}
+          to={`${props.url}/${page + 1}`}
+          className="arrow"
+          onClick={scrollToTop}
+        >&#xf061;</Link>
+      );
+    }
+
     return links;
+
   };
 
   return (
+
     <section className="CatalogTable">
+
       <header>
-        <p className="CatalogTable-total_number">
-          Товаров всего: <span style={{fontWeight: 500}}>
-            {productsNumber}
-          </span>
-        </p>
+        <p>Найдено товаров: <span style={{fontWeight: 500}}>
+          {prodsNum}
+        </span></p>
         <div className="CatalogTable-products_per_page">
           <p>Товаров на странице:</p>
           <div className="CatalogTable-switcher">
-            <label className={prodsPerPage === 20 ? 'current' : null}>
-              <input
-                type="radio"
-                name="products_per_page"
-                value={20}
-                checked={prodsPerPage === 20}
-                onChange={prodsPerPageChanged}
-              />20
-            </label>
-            <label className={prodsPerPage === 40 ? 'current' : null}>
-              <input
-                type="radio"
-                name="products_per_page"
-                value={40}
-                checked={prodsPerPage === 40}
-                onChange={prodsPerPageChanged}
-              />40
-            </label>
-            <label className={prodsPerPage === 60 ? 'current' : null}>
-              <input
-                type="radio"
-                name="products_per_page"
-                value={60}
-                checked={prodsPerPage === 60}
-                onChange={prodsPerPageChanged}
-              />60
-            </label>
+            {getSwitcherLayout(prodsPerPageValues)}
           </div>
         </div>
       </header>
+
       <main>
-        {displayedProducts.map(v =>
+        {displayedProds.map(v =>
           <ProductCard
             key={v.code}
             code={v.code}
@@ -107,21 +119,38 @@ const CatalogTable = props => {
           />
         )}
       </main>
-      {productsNumber < 1 ? null : (
+
+      {prodsNum < 1 ? null : (
         <footer>
-          <p className="CatalogTable-displayed_products">
-            Показаны товары: <span style={{fontWeight: 500}}>
-              {start + 1}&mdash;{end}
-            </span>
-          </p>
+          <p>Показаны товары: <span style={{fontWeight: 500}}>
+            {start + 1}&mdash;{end}
+          </span></p>
           <div className="CatalogTable-pagination">
-            {getPagination()}
+            {getPaginationLayout()}
           </div>
         </footer>
       )}
+
     </section>
+
   );
 
+};
+
+CatalogTable.propTypes = {
+  url: PropTypes.string.isRequired,
+  prodsList: PropTypes.arrayOf(PropTypes.shape({
+    code: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    imgURL: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    percentOff: PropTypes.number.isRequired,
+    unitsAvailable: PropTypes.number.isRequired,
+    brand: PropTypes.number.isRequired,
+    form: PropTypes.number.isRequired,
+  })),
+  prodsPerPage: PropTypes.number.isRequired,
+  cbProdsPerPageChanged: PropTypes.func.isRequired,
 };
 
 export default CatalogTable;

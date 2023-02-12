@@ -11,46 +11,63 @@
   background-color: white;
   box-shadow: 0 1px 2px 1px var(--clr-shadow-15);
 }
-.CatalogTable > header {
+.CatalogTable > header,
+.CatalogTable > footer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
-.CatalogTable > header p {
+.CatalogTable > header p,
+.CatalogTable > footer p {
   margin: 0;
 }
-.CatalogTable-total_number {
-  flex: 1 1 auto;
-}
 .CatalogTable-products_per_page {
-  flex: 0 0 auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 20px;
 }
-.CatalogTable-switcher {
+.CatalogTable-switcher,
+.CatalogTable-pagination {
   display: flex;
   gap: 10px;
 }
-.CatalogTable-switcher label {
+.CatalogTable-switcher label,
+.CatalogTable-pagination a {
   cursor: pointer;
   border-radius: 20px;
-  padding: 10px 11px;
   font-weight: 500;
   background-color: var(--clr-accent-15);
   box-shadow: 0 1px 3px 0 var(--clr-main-50);
   transition: 100ms;
 }
-.CatalogTable-switcher label:hover {
+.CatalogTable-switcher label {
+  padding: 10px 11px;
+}
+.CatalogTable-pagination a {
+  padding: 10px 15.5px;
+}
+.CatalogTable-pagination a.arrow {
+  padding: 10px 13px;
+  font-weight: 900;
+  font-family: 'Font Awesome 6 Free Solid';
+}
+.CatalogTable-switcher label:hover,
+.CatalogTable-pagination a:hover {
   box-shadow: 0 2px 6px 0 var(--clr-main-50);
 }
-.CatalogTable-switcher label:active {
+.CatalogTable-pagination a:hover {
+  text-decoration: none;
+}
+.CatalogTable-switcher label:active,
+.CatalogTable-pagination a:active {
   transform: translate(0, 2px);
   box-shadow: 0 1px 3px 0 var(--clr-main-50);
 }
-.CatalogTable-switcher label.current {
+.CatalogTable-switcher label.current,
+.CatalogTable-pagination a.current {
   pointer-events: none;
   color: white;
   background-color: var(--clr-accent);
