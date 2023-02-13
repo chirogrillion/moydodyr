@@ -1,8 +1,6 @@
-import React, {useEffect} from 'react';
+import React from 'react';
+import {useSelector} from 'react-redux';
 import {useParams} from 'react-router-dom';
-import {useSelector, useDispatch} from 'react-redux';
-
-import {refreshCatalog} from '../store/catalog';
 
 import Heading from '../components/Main/Heading/Heading';
 import Catalog from '../components/Main/Catalog/Catalog';
@@ -10,38 +8,6 @@ import Catalog from '../components/Main/Catalog/Catalog';
 const CatalogPage = () => {
 
   const catalog = useSelector(state => state.catalog);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-
-    const ajaxHandlerScript = 'https://fe.it-academy.by/AjaxStringStorage2.php';
-
-    let sp = new URLSearchParams();
-    sp.append('f', 'READ');
-    sp.append('n', 'KRGL_MOYDODYR_PRODUCTS');
-
-    fetch(ajaxHandlerScript, {
-      method: 'post',
-      body: sp,
-    })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`fetch error ${response.status}`);
-        }
-        else {
-          return response.json();
-        }
-      })
-      .then(data => {
-        const products = JSON.parse(data.result);
-        dispatch(refreshCatalog(products));
-      })
-      .catch(error => {
-        console.error(error);
-      })
-    ;
-
-  }, []);
 
   const params = useParams();
   const categoryNumber = params.ctgrid ? Number(params.ctgrid) : 0;
@@ -106,37 +72,25 @@ const CatalogPage = () => {
     return [categoryPath, productsList];
   };
 
-  let categoryPath;
-  let productsList;
-  let pathLength;
-  let currCategory;
-  let productsNumber;
+  const [categoryPath, productsList] = getDataFrom(catalog);
 
-  if (catalog.length > 0) {
+  const pathLength = categoryPath.length;
+  const currCategory = categoryPath[pathLength - 1].name;
+  document.title = `${currCategory} \u2014 Мойдодыр`;
 
-    [categoryPath, productsList] = getDataFrom(catalog);
-
-    pathLength = categoryPath.length;
-    currCategory = categoryPath[pathLength - 1].name;
-    document.title = `${currCategory} \u2014 Мойдодыр`;
-
-    productsNumber = productsList.length;
-
-  }
+  const productsNumber = productsList.length;
 
   return (
-    catalog.length === 0
-      ? <p className="loading">Загрузка данных...</p>
-      : <React.Fragment>
-        <Heading
-          path={categoryPath}
-          listLength={productsNumber}
-        />
-        <Catalog
-          categoryId={categoryNumber}
-          list={productsList}
-        />
-      </React.Fragment>
+    <React.Fragment>
+      <Heading
+        path={categoryPath}
+        listLength={productsNumber}
+      />
+      <Catalog
+        categoryId={categoryNumber}
+        list={productsList}
+      />
+    </React.Fragment>
   );
 
 };

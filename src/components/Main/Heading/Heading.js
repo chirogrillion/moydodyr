@@ -23,11 +23,11 @@ const Heading = props => {
 
     <header className="Heading">
 
-      {breadcrumbs.length > 0 ? (
+      {breadcrumbs ? (breadcrumbs.length > 0 ? (
         <ul className="Heading-breadcrumbs">
           {getLayout(breadcrumbs)}
         </ul>
-      ) : null}
+      ) : null) : null}
 
       <div className="Heading-title">
         <h1>{title}</h1>
@@ -36,11 +36,11 @@ const Heading = props => {
         ) : null}
       </div>
 
-      {currPage.sub ? (
+      {currPage ? (currPage.sub ? (
         <ul className="Heading-subcategories">
           {getLayout(currPage.sub)}
         </ul>
-      ) : null}
+      ) : null) : null}
 
     </header>
 
