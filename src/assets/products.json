@@ -15,11 +15,7 @@
                     "percentOff": 0,
                     "unitsAvailable": 9,
                     "brand": 100,
-                    "form": 6,
-                    "filters-1100": {
-                      "11001": 1,
-                      "11002": 2
-                    }
+                    "form": 6
                   }
                 ]
               },
@@ -33,11 +29,7 @@
                     "percentOff": 0,
                     "unitsAvailable": 29,
                     "brand": 103,
-                    "form": 6,
-                    "filters-1100": {
-                      "11001": 0,
-                      "11002": 1
-                    }
+                    "form": 6
                   }
                 ]
               },
@@ -51,11 +43,7 @@
                     "percentOff": 0,
                     "unitsAvailable": 11,
                     "brand": 104,
-                    "form": 4,
-                    "filters-1100": {
-                      "11001": 0,
-                      "11002": 4
-                    }
+                    "form": 4
                   }
                 ]
               }

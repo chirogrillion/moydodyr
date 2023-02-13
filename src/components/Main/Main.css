@@ -6,3 +6,11 @@
   max-width: 1280px;
   background-color: rgb(253, 253, 253);
 }
+.Main-container p.loading {
+  margin: 0;
+  height: 60vh;
+  padding: 40px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
