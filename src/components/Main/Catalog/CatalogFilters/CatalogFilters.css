@@ -21,9 +21,16 @@
 .CatalogFilters header h2 {
   margin: 0;
   text-align: center;
+  font-size: 1.25rem;
+}
+.CatalogFilters header h2::before {
+  padding-right: 10px;
+  content: '\f0b0';
+  font-weight: 900;
+  font-family: 'Font Awesome 6 Free Solid';
 }
 .CatalogFilters main {
-  padding: 0 20px;
+  padding: 20px;
 }
 .CatalogFilters footer {
   position: sticky;

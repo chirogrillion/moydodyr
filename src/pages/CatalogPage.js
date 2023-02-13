@@ -72,6 +72,11 @@ const CatalogPage = () => {
   };
 
   const [categoryPath, productsList] = getDataFrom(productsArr);
+
+  const pathLength = categoryPath.length;
+  const currCategory = categoryPath[pathLength - 1].name;
+  document.title = `${currCategory} \u2014 Мойдодыр`;
+
   const productsNumber = productsList.length;
 
   return (
