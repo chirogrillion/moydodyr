@@ -4,8 +4,7 @@ import {useSelector, useDispatch} from 'react-redux';
 import './Cart.css';
 
 import {changeProductQuantity} from '../../../store/cart';
-import {formatPrice} from '../formatPrice';
-import QuantityInput from '../QuantityInput/QuantityInput';
+import CartItem from './CartItem/CartItem';
 
 const Cart = props => {
 
@@ -14,8 +13,7 @@ const Cart = props => {
 
   const [checkedItems, setCheckedItems] = useState([]);
 
-  const checkboxClicked = eo => {
-    const itemCode = Number(eo.target.name);
+  const checkboxClicked = itemCode => {
     let newArray = [...checkedItems];
     if (checkedItems.includes(itemCode)) {
       const itemIndex = checkedItems.indexOf(itemCode);
@@ -28,60 +26,34 @@ const Cart = props => {
   };
 
   const getLayout = () => {
-    let ids = Object.keys(cart);
-    console.log(ids);
-    ids = ids.map(v => Number(v));
-    console.log(ids);
+    const ids = Object.keys(cart).map(v => Number(v));
     const cartItems = props.catalog.filter(
       v => ids.includes(v.code)
     );
-    console.log(cartItems);
-    return cartItems.map(v => <tr key={v.code}>
-      <td><input
-        type="checkbox"
-        name={v.code}
-        checked={checkedItems.includes(v.code)}
-        onChange={checkboxClicked}
-      /></td>
-      <td><img src={v.imgURL} alt={v.name}/></td>
-      <td>{v.name}</td>
-      <td>{
-        v.percentOff > 0
-          ? <React.Fragment>
-            <span className="old_price">{formatPrice(v.price)}</span>
-            <span className="price">{formatPrice(v.price * (100 - v.percentOff) / 100)}</span>
-          </React.Fragment>
-          : <span className="price">{formatPrice(v.price)}</span>
-      }</td>
-      <td>
-        <QuantityInput
-          productId={v.code}
-          productUnitsAvailable={v.unitsAvailable}
-          productQuantity={cart[String(v.code)]}
-        />
-      </td>
-      <td>{formatPrice(v.price * cart[String(v.code)])}</td>
-      <td></td>
-    </tr>);
+    return cartItems.map(v => (
+      <CartItem
+        key={v.code}
+        code={v.code}
+        name={v.name}
+        imgURL={v.imgURL}
+        price={v.price}
+        percentOff={v.percentOff}
+        unitsAvailable={v.unitsAvailable}
+        quantity={cart[String(v.code)]}
+        isSelected={checkedItems.includes(v.code)}
+        cbCheckboxClicked={checkboxClicked}
+      />
+    ));
   };
 
   return (
-    <main className="Cart">
-      <table>
-        <thead><tr>
-          <th>Выбрать</th>
-          <th>Фото</th>
-          <th>Наименование</th>
-          <th>Цена</th>
-          <th>Количество</th>
-          <th>Стоимость</th>
-          <th>Управление</th>
-        </tr></thead>
-        <tbody>
-          {getLayout()}
-        </tbody>
-      </table>
-    </main>
+    <section className="Cart">
+      <header></header>
+      <main>
+        {getLayout()}
+      </main>
+      <footer></footer>
+    </section>
   );
 
 };

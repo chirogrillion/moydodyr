@@ -1,4 +1,4 @@
-.FavoriteToggle {
+.ProductCard .FavoriteToggle {
   position: absolute;
   top: -8px;
   right: -8px;
@@ -10,7 +10,7 @@
   font-family: 'Font Awesome 6 Free Solid';
   background-color: white !important;
 }
-.FavoriteToggle-hiding {
+.ProductCard .FavoriteToggle-hiding {
   opacity: 0;
 }
 .ProductCard:hover .FavoriteToggle-hiding {

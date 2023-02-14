@@ -3,7 +3,7 @@ import React from 'react';
 import './ProductCard.css';
 
 import {formatPrice} from '../formatPrice';
-import FavoriteToggle from './FavoriteToggle/FavoriteToggle';
+import FavoriteToggle from '../FavoriteToggle/FavoriteToggle';
 import AddToCart from './AddToCart/AddToCart';
 
 const ProductCard = props => {
