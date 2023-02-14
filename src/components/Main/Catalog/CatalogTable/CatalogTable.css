@@ -8,16 +8,13 @@
 .CatalogTable > footer {
   border-radius: 20px;
   padding: 20px;
-  background-color: white;
-  box-shadow: 0 1px 2px 1px var(--clr-shadow-15);
-}
-.CatalogTable > header,
-.CatalogTable > footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
+  background-color: white;
+  box-shadow: 0 1px 2px 1px var(--clr-shadow-15);
 }
 .CatalogTable > header p,
 .CatalogTable > footer p {

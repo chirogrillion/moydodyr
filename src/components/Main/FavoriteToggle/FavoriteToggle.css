@@ -10,9 +10,10 @@
   font-family: 'Font Awesome 6 Free Solid';
   background-color: white !important;
 }
-.ProductCard .FavoriteToggle-hiding {
+.FavoriteToggle-hiding {
   opacity: 0;
 }
-.ProductCard:hover .FavoriteToggle-hiding {
+.ProductCard:hover .FavoriteToggle-hiding,
+.CartItem:hover .FavoriteToggle-hiding {
   opacity: 1;
 }

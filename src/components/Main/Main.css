@@ -4,11 +4,11 @@
 .Main-container {
   margin: 0 auto;
   max-width: 1280px;
+  min-height: 100vh;
   background-color: rgb(253, 253, 253);
 }
 .Main-container p.loading {
   margin: 0;
-  height: 60vh;
   padding: 40px;
   text-align: center;
   font-weight: 500;

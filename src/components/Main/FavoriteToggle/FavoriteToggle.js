@@ -7,8 +7,6 @@ import {addToFavorites, removeFromFavorites} from '../../../store/favorites';
 
 const FavoriteToggle = props => {
 
-  console.log('Рендеринг FavoriteToggle #' + props.productId);
-
   const isFavorite = useSelector(state => state.favorites.findIndex(v => v === props.productId));
   const dispatch = useDispatch();
 

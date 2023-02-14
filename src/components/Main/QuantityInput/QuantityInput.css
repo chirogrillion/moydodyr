@@ -10,7 +10,7 @@
   -moz-appearance: textfield;
   flex: 1 1 auto;
   z-index: 1;
-  min-width: 20px;
+  min-width: 40px;
   border-right: none;
   border-left: none;
   border-radius: 0;

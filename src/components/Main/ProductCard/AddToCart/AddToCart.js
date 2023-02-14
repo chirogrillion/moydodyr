@@ -8,8 +8,6 @@ import {changeProductQuantity} from '../../../../store/cart';
 
 const AddToCart = props => {
 
-  console.log('Рендеринг AddToCart #' + props.productId);
-
   const productQuantity = useSelector(state => state.cart[props.productId]);
   const dispatch = useDispatch();
 
