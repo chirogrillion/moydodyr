@@ -6,8 +6,9 @@ const HeaderButton = props => {
   return (
     <button
       type="button"
-      className={props.cls ? `HeaderButton ${props.cls}` : 'HeaderButton'}
+      className={`HeaderButton ${props.cls}`}
       title={props.children}
+      onClick={props.byClick}
     >
       <span className="HeaderButton-icon">{props.icon}</span>
       <span className="HeaderButton-text">{props.children}</span>

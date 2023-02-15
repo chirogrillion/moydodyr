@@ -1,14 +1,14 @@
 .Menu {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
   color: white;
   text-shadow: 0 1px 1px var(--clr-shadow);
-  list-style-type: none;
-  white-space: nowrap;
   font-weight: 500;
+}
+.Menu.shown {
+  flex-direction: column;
+  color: var(--clr-main);
+  text-shadow: none;
+  font-size: 1.25rem;
+  line-height: normal;
 }
 .Menu ul {
   margin: 0;
@@ -18,11 +18,64 @@
   row-gap: 15px;
   column-gap: 40px;
   list-style-type: none;
+  white-space: nowrap;
+}
+.Menu.shown ul {
+  flex-direction: column;
+  row-gap: 0;
+}
+.Menu ul.Menu-container {
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.Menu.shown ul.Menu-container {
+  flex: 0 0 auto;
+  padding: 15px 30px !important;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  column-gap: 60px;
+  background-color: white;
+  box-shadow: 0 0 6px 2px var(--clr-shadow-65);
+  clip-path: inset(0 0 -10px 0);
+}
+.Menu.shown ul > li {
+  flex: 1 1 auto;
+}
+.Menu.shown ul > li > ul > li {
+  border-bottom: solid 1px var(--clr-main-15);
+}
+.Menu.shown ul > li:last-child > ul > li:last-child {
+  border-bottom: none;
+}
+.Menu.shown ul li a {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
 }
 .Menu-call_center {
   display: flex;
   gap: 10px;
 }
+.Menu.shown .Menu-call_center {
+  align-items: center;
+}
+.Menu.shown .Menu-call_center a {
+  width: auto;
+}
 .Menu-consumer_info {
   justify-content: flex-end;
+}
+.Menu-overlay {
+  display: none;
+  cursor: pointer;
+  background-color: var(--clr-shadow-65);
+}
+.Menu.shown .Menu-overlay {
+  display: block;
+  flex: 1 1 auto;
+}
+@media only all and (max-width: 910px) {
 }

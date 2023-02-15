@@ -20,6 +20,11 @@
   border-color: var(--clr-main);
   box-shadow: 0 1px 2px 0 var(--clr-shadow);
 }
+.HeaderButton.clicked {
+  color: var(--clr-main);
+  background-color: white;
+  box-shadow: none;
+}
 .HeaderButton-icon {
   font-weight: 900;
   font-family: 'Font Awesome 6 Free Solid';
@@ -49,12 +54,19 @@
     background-color: transparent;
     box-shadow: none;
   }
+  .HeaderButton:hover {
+    box-shadow: none;
+  }
   .HeaderButton:active {
     transform: none;
+    box-shadow: none;
   }
   .HeaderButton-icon {
     font-size: 1.5rem;
     text-shadow: 0 2px 2px var(--clr-shadow-50);
+  }
+  .HeaderButton.clicked .HeaderButton-icon {
+    text-shadow: none;
   }
   .HeaderButton-text {
     display: none;
