@@ -17,6 +17,7 @@
   flex-wrap: wrap;
   row-gap: 15px;
   column-gap: 40px;
+  list-style-type: none;
 }
 .Menu-call_center {
   display: flex;

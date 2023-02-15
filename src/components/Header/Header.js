@@ -3,12 +3,12 @@ import {Link} from 'react-router-dom';
 
 import './Header.css';
 
-import MenuButton from './MenuButton/MenuButton';
+import MenuButton from './HeaderButton/MenuButton';
 import Menu from './Menu/Menu';
-import SearchButton from './SearchButton/SearchButton';
+import SearchButton from './HeaderButton/SearchButton';
 import SearchBar from './SearchBar/SearchBar';
-import FavoritesButton from './FavoritesButton/FavoritesButton';
-import CartButton from './CartButton/CartButton';
+import FavoritesButton from './HeaderButton/FavoritesButton';
+import CartButton from './HeaderButton/CartButton';
 
 const maxiLogo = require('../../assets/logo/moydodyr-with_text.png');
 const miniLogo = require('../../assets/logo/moydodyr.png');
@@ -18,19 +18,26 @@ const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', stickToTop);
+    window.addEventListener('scroll', toggleStickyClass);
+    window.addEventListener('resize', toggleStickyClass);
     return () => {
-      window.removeEventListener('scroll', stickToTop);
+      window.removeEventListener('scroll', toggleStickyClass);
+      window.removeEventListener('resize', toggleStickyClass);
     };
   }, []);
 
-  const stickToTop = () => {
+  const toggleStickyClass = () => {
+    const viewportWidth = window.innerWidth;
     const scrollTop = window.scrollY;
-    console.log(scrollTop);
-    if (scrollTop >= 160) {
-      setIsSticky(true);
+    if (viewportWidth > 910) {
+      if (scrollTop >= 160) {
+        setIsSticky(true);
+      }
+      else {
+        setIsSticky(false);
+      }
     }
-    else if (scrollTop < 160) {
+    else {
       setIsSticky(false);
     }
   };

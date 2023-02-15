@@ -1,0 +1,66 @@
+.HeaderButton {
+  position: relative;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+  color: white;
+  background-color: var(--clr-main);
+  box-shadow: 0 1px 2px 0 var(--clr-shadow);
+}
+.HeaderButton:hover {
+  background-color: var(--clr-main-90);
+  border-color: var(--clr-main-90);
+  box-shadow: 0 2px 4px 0 var(--clr-main);
+}
+.HeaderButton:active {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: var(--clr-main);
+  border-color: var(--clr-main);
+  box-shadow: 0 1px 2px 0 var(--clr-shadow);
+}
+.HeaderButton-icon {
+  font-weight: 900;
+  font-family: 'Font Awesome 6 Free Solid';
+  line-height: 1em;
+}
+.HeaderButton-label {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  border: solid 2px white;
+  border-radius: 12px;
+  padding: 0 5.5px;
+  font-weight: 700;
+  color: white;
+  background-color: var(--clr-red);
+  box-shadow: 0 2px 2px 0 var(--clr-shadow-50);
+}
+@media only all and (max-width: 910px) {
+  .HeaderButton {
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .HeaderButton:active {
+    transform: none;
+  }
+  .HeaderButton-icon {
+    font-size: 1.5rem;
+    text-shadow: 0 2px 2px var(--clr-shadow-50);
+  }
+  .HeaderButton-text {
+    display: none;
+  }
+  .HeaderButton-label {
+    top: 7px;
+    right: 7px;
+  }
+}
