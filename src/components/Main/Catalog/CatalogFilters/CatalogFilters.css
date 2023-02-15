@@ -1,7 +1,7 @@
 .CatalogFilters {
   align-self: start;
   position: sticky;
-  top: 20px;
+  top: 100px;
   margin: 20px;
   border-radius: 20px;
   background-color: white;
@@ -15,7 +15,8 @@
 }
 .CatalogFilters header {
   position: sticky;
-  top: 0;
+  top: 80px;
+  z-index: 3;
   border-bottom: solid 1px var(--clr-main-15);
 }
 .CatalogFilters header h2 {

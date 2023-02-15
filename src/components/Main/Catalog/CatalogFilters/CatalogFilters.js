@@ -2,7 +2,7 @@ import React from 'react';
 
 import './CatalogFilters.css';
 
-function CatalogFilters() {
+const CatalogFilters = () => {
   return (
     <aside className="CatalogFilters">
       <header>

@@ -2,7 +2,7 @@ import React, {useRef} from 'react';
 
 import './SearchBar.css';
 
-function SearchBar() {
+const SearchBar = () => {
 
   const inputRef = useRef(null);
   const focusOnInput = () => inputRef.current.focus();

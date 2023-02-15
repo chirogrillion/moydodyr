@@ -27,7 +27,7 @@
 .Cart > header > div {
   display: flex;
   align-items: flex-end;
-  gap: 20px;
+  gap: 40px;
 }
 .Cart > header > div label {
   cursor: pointer;
@@ -51,7 +51,7 @@
 .Cart > footer {
   grid-area: 1 / 2 / 3 / 3;
   position: sticky;
-  top: 20px;
+  top: 100px;
   gap: 20px;
 }
 .Cart > footer > div,

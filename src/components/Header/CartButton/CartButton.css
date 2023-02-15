@@ -2,7 +2,7 @@
   position: relative;
 }
 .CartButton::before {
-  content: '\f07a';
+  content: '\f291';
 }
 .CartButton-label {
   position: absolute;

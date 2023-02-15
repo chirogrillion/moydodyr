@@ -1,13 +1,14 @@
 import React from 'react';
 import {useSelector} from 'react-redux';
+import {Link} from 'react-router-dom';
 
 import './CartButton.css';
 
-function CartButton() {
+const CartButton = () => {
   const cart = useSelector(state => state.cart);
   const cartNumber = Object.values(cart).reduce((r, v) => r + v, 0);
   return (
-    <button
+    <Link to="/cart"><button
       className="CartButton button-filled"
       type="button"
     >
@@ -15,7 +16,7 @@ function CartButton() {
       {cartNumber > 0 ? (
         <div className="CartButton-label">{cartNumber}</div>
       ) : null}
-    </button>
+    </button></Link>
   );
 };
 

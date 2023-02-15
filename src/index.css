@@ -1,9 +1,11 @@
 body {
   --clr-main: rgb(37, 71, 150);
+  --clr-main-90: rgb(59, 90, 161);
   --clr-main-50: rgba(37, 71, 150, 0.5);
   --clr-main-25: rgba(37, 71, 150, 0.25);
   --clr-main-15: rgba(37, 71, 150, 0.15);
   --clr-shadow: rgb(20, 39, 82);
+  --clr-shadow-65: rgba(20, 39, 82, 0.65);
   --clr-shadow-50: rgba(20, 39, 82, 0.5);
   --clr-shadow-25: rgba(20, 39, 82, 0.25);
   --clr-shadow-15: rgba(20, 39, 82, 0.15);

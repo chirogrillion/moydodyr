@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useSelector} from 'react-redux';
 
 import Heading from '../components/Main/Heading/Heading';
 import Cart from '../components/Main/Cart/Cart';
 
 const CartPage = () => {
+
+  useEffect(() => {
+    document.title = 'Корзина \u2014 Мойдодыр';
+  }, []);
 
   const catalog = useSelector(state => state.catalog);
 
