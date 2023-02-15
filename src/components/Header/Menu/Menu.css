@@ -1,0 +1,27 @@
+.Menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  color: white;
+  text-shadow: 0 1px 1px var(--clr-shadow);
+  list-style-type: none;
+  white-space: nowrap;
+  font-weight: 500;
+}
+.Menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 40px;
+}
+.Menu-call_center {
+  display: flex;
+  gap: 10px;
+}
+.Menu-consumer_info {
+  justify-content: flex-end;
+}

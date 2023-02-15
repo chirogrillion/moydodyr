@@ -30,35 +30,28 @@
   display: flex;
   align-items: center;
 }
-.Header-logo img {
+#Header-logo-maxi {
   height: 126px;
+}
+#Header-logo-mini {
+  display: none;
+  height: 60px;
 }
 .sticky .Header-logo {
   grid-area: 1 / 1 / 2 / 2;
   padding: 0;
 }
-.sticky .Header-logo img {
-  height: 60px;
+.sticky #Header-logo-maxi {
+  display: none;
 }
-.Header-contacts {
+.sticky #Header-logo-mini {
+  display: block;
+}
+.Menu {
   grid-area: 2 / 2 / 3 / 4;
-  display: flex;
-  justify-content: space-between;
-  gap: 80px;
-  color: white;
-  text-shadow: 0 1px 1px var(--clr-shadow);
-  font-weight: 500;
 }
-.Header-call_center {
-  display: flex;
-  gap: 20px;
-}
-.Header-consumer_info {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 40px;
-  list-style-type: none;
+.sticky .Menu {
+  display: none;
 }
 .Header .SearchBar {
   grid-area: 3 / 2 / 4 / 3;
@@ -66,12 +59,20 @@
 .sticky .SearchBar {
   grid-area: 1 / 2 / 2 / 3;
 }
-.Header-user {
+.Header-buttons-right {
   grid-area: 3 / 3 / 4 / 4;
   display: flex;
   justify-content: flex-end;
   gap: 20px;
 }
-.sticky .Header-user {
+.sticky .Header-buttons-right {
   grid-area: 1 / 3 / 2 / 4;
+}
+@media only all and (max-width: 910px) {
+  #Header-logo-maxi {
+    display: none;
+  }
+  #Header-logo-mini {
+    display: block;
+  }
 }

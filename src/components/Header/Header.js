@@ -3,11 +3,14 @@ import {Link} from 'react-router-dom';
 
 import './Header.css';
 
+import MenuButton from './MenuButton/MenuButton';
+import Menu from './Menu/Menu';
+import SearchButton from './SearchButton/SearchButton';
 import SearchBar from './SearchBar/SearchBar';
 import FavoritesButton from './FavoritesButton/FavoritesButton';
 import CartButton from './CartButton/CartButton';
 
-const logo = require('../../assets/logo/moydodyr-with_text.png');
+const maxiLogo = require('../../assets/logo/moydodyr-with_text.png');
 const miniLogo = require('../../assets/logo/moydodyr.png');
 
 const Header = () => {
@@ -35,25 +38,17 @@ const Header = () => {
   return (
     <header className={isSticky ? 'Header sticky' : 'Header'}>
       <div className="Header-container">
-        <Link to="/catalog/0" className="Header-logo">
-          <img src={isSticky ? miniLogo : logo} alt="Мойдодыр"/>
-        </Link>
-        {isSticky ? null : (
-          <section className="Header-contacts">
-            <a className="link-location">Минск</a>
-            <div className="Header-call_center">
-              <a className="link-tel">+375 29 656-32-32</a>
-              <span>с 9:00 до 21:00</span>
-            </div>
-            <ul className="Header-consumer_info">
-              <li><a>Доставка и оплата</a></li>
-              <li><a>Акции</a></li>
-              <li><a>Личный кабинет</a></li>
-            </ul>
-          </section>
-        )}
+        <section className="Header-buttons-left">
+          <MenuButton/>
+          <SearchButton/>
+        </section>
+        <Menu/>
         <SearchBar/>
-        <section className="Header-user">
+        <Link to="/catalog/0" className="Header-logo">
+          <img id="Header-logo-maxi" src={maxiLogo} alt="Мойдодыр"/>
+          <img id="Header-logo-mini" src={miniLogo} alt="Мойдодыр"/>
+        </Link>
+        <section className="Header-buttons-right">
           <FavoritesButton/>
           <CartButton/>
         </section>
