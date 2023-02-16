@@ -1,27 +1,11 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
 import './Menu.css';
 
-import {toggleMenu} from '../toggleMenu';
-
-const Menu = () => {
-
-  useEffect(() => {
-    window.addEventListener('resize', hideMenu);
-    return () => {
-      window.removeEventListener('resize', hideMenu);
-    };
-  }, []);
-
-  const hideMenu = () => {
-    if (window.innerWidth > 910) {
-      document.querySelector('.MenuButton').classList.remove('clicked');
-      document.querySelector('.Menu').classList.remove('shown');
-    }
-  };
+const Menu = props => {
 
   return (
-    <section className="Menu">
+    <section className={props.cls ? `Menu ${props.cls}` : 'Menu'}>
       <ul className="Menu-container">
         <li><ul>
           <li>
@@ -43,7 +27,7 @@ const Menu = () => {
       </ul>
       <div
         className="Menu-overlay"
-        onClick={toggleMenu}
+        onClick={props.cbHide}
       ></div>
     </section>
   );

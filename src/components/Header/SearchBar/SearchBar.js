@@ -2,13 +2,13 @@ import React, {useRef} from 'react';
 
 import './SearchBar.css';
 
-const SearchBar = () => {
+const SearchBar = props => {
 
   const inputRef = useRef(null);
   const focusOnInput = () => inputRef.current.focus();
 
   return (
-    <section className="SearchBar">
+    <section className={props.cls ? `SearchBar ${props.cls}` : 'SearchBar'}>
       <div
         className="SearchBar-container"
         onClick={focusOnInput}
@@ -20,6 +20,10 @@ const SearchBar = () => {
           ref={inputRef}
         />
       </div>
+      <div
+        className="SearchBar-overlay"
+        onClick={props.cbHide}
+      ></div>
     </section>
   );
 

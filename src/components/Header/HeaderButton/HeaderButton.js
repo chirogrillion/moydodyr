@@ -6,7 +6,7 @@ const HeaderButton = props => {
   return (
     <button
       type="button"
-      className={`HeaderButton ${props.cls}`}
+      className={props.cls ? `HeaderButton ${props.cls}` : 'HeaderButton'}
       title={props.children}
       onClick={props.byClick}
     >
