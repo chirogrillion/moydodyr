@@ -12,7 +12,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  row-gap: 20px;
+  column-gap: 40px;
   background-color: white;
   box-shadow: 0 1px 2px 1px var(--clr-shadow-15);
 }
@@ -20,9 +21,12 @@
 .CatalogTable > footer p {
   margin: 0;
 }
+.CatalogTable > footer p {
+  flex: 1 1 auto;
+  text-align: center;
+}
 .CatalogTable-products_per_page {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 20px;
 }
@@ -30,6 +34,10 @@
 .CatalogTable-pagination {
   display: flex;
   gap: 10px;
+}
+.CatalogTable-pagination {
+  flex: 1 1 auto;
+  justify-content: center;
 }
 .CatalogTable-switcher label,
 .CatalogTable-pagination a {
@@ -75,7 +83,50 @@
 }
 .CatalogTable > main {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   align-content: start;
   gap: 20px;
+}
+@media only all and (max-width: 1280px) {
+  .CatalogTable > main {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media only all and (max-width: 1080px) {
+  .CatalogTable > main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only all and (max-width: 840px) {
+  .CatalogTable {
+    padding: 0;
+    row-gap: 0;
+  }
+  .CatalogTable > header,
+  .CatalogTable > footer {
+    z-index: 3;
+    box-shadow: 0 0 6px 2px var(--clr-shadow-25);
+    border-radius: 0;
+    padding: 15px 30px;
+  }
+  .CatalogTable > header {
+    position: sticky;
+    top: 80px;
+    right: 0;
+    left: 0;
+    clip-path: inset(0 0 -10px 0);
+  }
+  .CatalogTable > footer {
+    clip-path: inset(-10px 0 0 0);
+  }
+  .CatalogTable > main {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 10px;
+    background-color: rgb(253, 253, 253);
+  }
+}
+@media only all and (max-width: 620px) {
+  .CatalogTable > main {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

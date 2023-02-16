@@ -146,8 +146,6 @@ CatalogTable.propTypes = {
     price: PropTypes.number.isRequired,
     percentOff: PropTypes.number.isRequired,
     unitsAvailable: PropTypes.number.isRequired,
-    brand: PropTypes.number.isRequired,
-    form: PropTypes.number.isRequired,
   })),
   prodsPerPage: PropTypes.number.isRequired,
   cbProdsPerPageChanged: PropTypes.func.isRequired,

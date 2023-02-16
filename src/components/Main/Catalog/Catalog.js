@@ -4,7 +4,6 @@ import {Routes, Route} from 'react-router-dom';
 
 import './Catalog.css';
 
-import CatalogFilters from './CatalogFilters/CatalogFilters';
 import CatalogTable from './CatalogTable/CatalogTable';
 
 const Catalog = props => {
@@ -24,9 +23,6 @@ const Catalog = props => {
 
   return (
     <section className="Catalog">
-      <CatalogFilters
-        categoryId={categoryId}
-      />
       <Routes>
         <Route path="" element={elem}/>
         <Route path=":page" element={elem}/>
@@ -45,8 +41,6 @@ Catalog.propTypes = {
     price: PropTypes.number.isRequired,
     percentOff: PropTypes.number.isRequired,
     unitsAvailable: PropTypes.number.isRequired,
-    brand: PropTypes.number.isRequired,
-    form: PropTypes.number.isRequired,
   })),
 };
 
