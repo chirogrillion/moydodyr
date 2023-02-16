@@ -81,7 +81,7 @@ const Cart = props => {
             />
             Выделить все
           </label>
-          <p>{selectedItemsNumber === 1 ? 'Выделен' : 'Выделены'} {selectedItemsNumber} {getNumWord(selectedItemsNumber, 'элемент', 'элемента', 'элементов')}</p>
+          <p>{selectedItemsNumber === 1 ? 'Выделен' : 'Выделены'} {selectedItemsNumber}&nbsp;{getNumWord(selectedItemsNumber, 'элемент', 'элемента', 'элементов')}</p>
         </div>
         <button
           type="button"

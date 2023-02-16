@@ -14,20 +14,22 @@
   border-radius: 20px;
   padding: 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   background-color: white;
   box-shadow: 0 1px 2px 1px var(--clr-shadow-15);
 }
 .Cart > header {
   grid-area: 1 / 1 / 2 / 2;
-  gap: 40px;
+  justify-content: space-between;
+  row-gap: 20px;
+  column-gap: 40px;
 }
 .Cart > header > div {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
-  gap: 40px;
+  row-gap: 20px;
+  column-gap: 40px;
 }
 .Cart > header > div label {
   cursor: pointer;
@@ -53,6 +55,7 @@
   position: sticky;
   top: 100px;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .Cart > footer > div,
 .Cart > footer > button {
@@ -74,4 +77,35 @@
   opacity: 100%;
   font-weight: 900;
   font-size: 2rem;
+}
+@media only all and (max-width: 840px) {
+  .Cart {
+    padding: 0;
+    grid-template: repeat(3, auto) / 1fr;
+    gap: 0;
+  }
+  .Cart > header,
+  .Cart > footer {
+    grid-area: unset;
+    position: sticky;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    box-shadow: 0 0 6px 2px var(--clr-shadow-25);
+    border-radius: 0;
+    padding: 15px 30px;
+  }
+  .Cart > header {
+    top: 80px;
+    clip-path: inset(0 0 -10px 0);
+  }
+  .Cart > main {
+    padding: 30px 10px;
+    background-color: rgb(253, 253, 253);
+  }
+  .Cart > footer {
+    top: auto;
+    bottom: 0;
+    clip-path: inset(-10px 0 0 0);
+  }
 }

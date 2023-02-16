@@ -49,7 +49,7 @@
 .CartItem-price::after {
   content: ' р.';
 }
-@media only all and (max-width: 860px) {
+@media only all and (max-width: 1170px) {
   .CartItem {
     flex-direction: column;
     align-items: flex-start;

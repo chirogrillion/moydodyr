@@ -17,3 +17,8 @@
   font-weight: 500;
   font-size: 1.25rem;
 }
+@media only all and (max-width: 840px) {
+  .Main-container {
+    background-color: white;
+  }
+}
