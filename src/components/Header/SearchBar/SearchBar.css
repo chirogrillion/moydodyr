@@ -21,11 +21,18 @@
 .SearchBar-container:hover {
   box-shadow: 0 2px 4px 0 var(--clr-main);
 }
+.SearchBar.shown .SearchBar-container {
+  border-radius: 0;
+  box-shadow: none;
+}
 .SearchBar-container span {
   padding-left: 20px;
   font-weight: 900;
   line-height: 1.05em;
   font-family: 'Font Awesome 6 Free Solid';
+}
+.SearchBar.shown .SearchBar-container span {
+  display: none;
 }
 .SearchBar-container input {
   width: 0;
@@ -44,6 +51,14 @@
   color: var(--clr-main);
 }
 .SearchBar-container input:focus::placeholder {
+  opacity: 50%;
+}
+.SearchBar.shown .SearchBar-container input {
+  flex: 1 1 auto;
+  border-radius: 0;
+  padding: 12px 27px;
+}
+.SearchBar.shown .SearchBar-container input::placeholder {
   opacity: 50%;
 }
 .SearchBar-overlay {

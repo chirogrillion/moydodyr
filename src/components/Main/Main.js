@@ -11,9 +11,14 @@ import CartPage from '../../pages/CartPage';
 
 const Main = () => {
 
+  useEffect(() => {
+    loadData();
+  });
+
+  const catalog = useSelector(state => state.catalog);
   const dispatch = useDispatch();
 
-  useEffect(() => {
+  const loadData = () => {
 
     const ajaxHandlerScript = 'https://fe.it-academy.by/AjaxStringStorage2.php';
 
@@ -42,9 +47,7 @@ const Main = () => {
       })
     ;
 
-  }, []);
-
-  const catalog = useSelector(state => state.catalog);
+  };
 
   return (
     <main className="Main">

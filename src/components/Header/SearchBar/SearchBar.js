@@ -1,8 +1,14 @@
-import React, {useRef} from 'react';
+import React, {useEffect, useRef} from 'react';
 
 import './SearchBar.css';
 
 const SearchBar = props => {
+
+  useEffect(() => {
+    if (props.cls === 'shown') {
+      focusOnInput();
+    }
+  }, [props]);
 
   const inputRef = useRef(null);
   const focusOnInput = () => inputRef.current.focus();
@@ -16,7 +22,11 @@ const SearchBar = props => {
         <span>&#61442;</span>
         <input
           type="text"
-          placeholder="Поиск товаров"
+          placeholder={
+            props.cls === 'shown'
+              ? 'Введите запрос...'
+              : 'Поиск товаров'
+          }
           ref={inputRef}
         />
       </div>
