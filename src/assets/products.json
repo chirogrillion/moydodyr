@@ -163,7 +163,7 @@
               },
               {
                 "code": 2001003,
-                "name": "Перчатки одноразовые виниловые Рыжий Кот (S; 100\u00a0шт.)",
+                "name": "Перчатки одноразовые виниловые Рыжий кот (S; 100\u00a0шт.)",
                 "imgURL": "https://iili.io/HGKCKcN.jpg",
                 "price": 40.87,
                 "percentOff": 10,
@@ -229,17 +229,86 @@
           },
           {
             "code": 2004, "name": "Швабры и насадки", "content": [
-              
+              {
+                "code": 2004001,
+                "name": "Швабра для пола губчатая York Top Mop",
+                "imgURL": "https://iili.io/HGKyKdJ.jpg",
+                "price": 35.04,
+                "percentOff": 0,
+                "unitsAvailable": 12
+              },
+              {
+                "code": 2004002,
+                "name": "Швабра для пола Рыжий кот Spray",
+                "imgURL": "https://iili.io/HGfHgbR.jpg",
+                "price": 48.45,
+                "percentOff": 5,
+                "unitsAvailable": 19
+              },
+              {
+                "code": 2004003,
+                "name": "Швабра с отжимом Vileda Twist & Go",
+                "imgURL": "https://iili.io/HGfdlyb.jpg",
+                "price": 127.62,
+                "percentOff": 10,
+                "unitsAvailable": 6
+              }
             ]
           },
           {
             "code": 2005, "name": "Совки и щётки для пола", "content": [
-              
+              {
+                "code": 2005001,
+                "name": "Щётка для пола HOMEline Фантазия (79\u00a0см)",
+                "imgURL": "https://iili.io/HGfKKDG.jpg",
+                "price": 7.48,
+                "percentOff": 0,
+                "unitsAvailable": 17
+              },
+              {
+                "code": 2005002,
+                "name": "Совок для мусора металлический (70\u00a0см)",
+                "imgURL": "https://iili.io/HGfftGR.jpg",
+                "price": 9.36,
+                "percentOff": 0,
+                "unitsAvailable": 21
+              },
+              {
+                "code": 2005003,
+                "name": "Набор для уборки York",
+                "imgURL": "https://iili.io/HGfBAOX.jpg",
+                "price": 9.66,
+                "percentOff": 0,
+                "unitsAvailable": 29
+              }
             ]
           },
           {
             "code": 2006, "name": "Щётки, ёршики, вантузы", "content": [
-              
+              {
+                "code": 2006001,
+                "name": "Щётка для уборки Idea Утюжок",
+                "imgURL": "https://iili.io/HGfnCap.jpg",
+                "price": 6.36,
+                "percentOff": 0,
+                "unitsAvailable": 11
+              },
+              {
+                "code": 2006002,
+                "name": "Ёршик для туалета Brabantia Profile",
+                "imgURL": "https://iili.io/HGfxW3x.jpg",
+                "price": 300.66,
+                "percentOff": 30,
+                "unitsAvailable": 4
+              },
+              {
+                "code": 2006003,
+                "name": "Вантуз резиновый с деревянной ручкой Белбогемия",
+                "imgURL": "https://iili.io/HGfI6Xt.jpg",
+                "price": 10.14,
+                "percentOff": 0,
+                "unitsAvailable": 25
+              }
             ]
           },
           {
