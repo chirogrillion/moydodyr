@@ -75,12 +75,58 @@
             "code": 1300, "name": "Средства для ухода за бытовой техникой", "sub": [
               {
                 "code": 1301, "name": "Средства против накипи", "content": [
-                  
+                  {
+                    "code": 1301001,
+                    "name": "Средство для удаления накипи SANO Antikalk (700\u00a0мл)",
+                    "imgURL": "https://iili.io/HGfDfLX.jpg",
+                    "price": 22.25,
+                    "percentOff": 0,
+                    "unitsAvailable": 0
+                  },
+                  {
+                    "code": 1301002,
+                    "name": "Таблетки против накипи для чайника Paterra (4\u00a0шт.)",
+                    "imgURL": "https://iili.io/HGfmN5v.jpg",
+                    "price": 10.54,
+                    "percentOff": 0,
+                    "unitsAvailable": 16
+                  },
+                  {
+                    "code": 1301003,
+                    "name": "Средство для удаления накипи 911 Formula (450\u00a0мл)",
+                    "imgURL": "https://iili.io/HGqJMl9.jpg",
+                    "price": 5.09,
+                    "percentOff": 10,
+                    "unitsAvailable": 21
+                  }
                 ]
               },
               {
                 "code": 1302, "name": "Средства для чистки стиральных и посудомоечных машин", "content": [
-                  
+                  {
+                    "code": 1302001,
+                    "name": "Средство от накипи Dr.\u00a0Beckmann (2x50\u00a0г)",
+                    "imgURL": "https://iili.io/HGfyonS.jpg",
+                    "price": 13.35,
+                    "percentOff": 0,
+                    "unitsAvailable": 4
+                  },
+                  {
+                    "code": 1302002,
+                    "name": "Средство для смягчения воды Calgon 3в1 (750\u00a0г)",
+                    "imgURL": "https://iili.io/HGq3oox.jpg",
+                    "price": 21.95,
+                    "percentOff": 15,
+                    "unitsAvailable": 10
+                  },
+                  {
+                    "code": 1302003,
+                    "name": "Очиститель посудомоечных машин Finish (250\u00a0мл)",
+                    "imgURL": "https://iili.io/HGqFvIa.jpg",
+                    "price": 24.18,
+                    "percentOff": 0,
+                    "unitsAvailable": 12
+                  }
                 ]
               },
               {
@@ -136,7 +182,30 @@
           },
           {
             "code": 1500, "name": "Ароматизаторы и освежители воздуха", "content": [
-              
+              {
+                "code": 1500001,
+                "name": "Освежитель воздуха автоматический Air Wick Freshmatic Цветущая сакура",
+                "imgURL": "https://iili.io/HGf6HEQ.jpg",
+                "price": 41.71,
+                "percentOff": 0,
+                "unitsAvailable": 20
+              },
+              {
+                "code": 1500002,
+                "name": "Освежитель воздуха Glade Свежесть утра (300\u00a0мл)",
+                "imgURL": "https://iili.io/HGfs0MJ.jpg",
+                "price": 7.01,
+                "percentOff": 0,
+                "unitsAvailable": 43
+              },
+              {
+                "code": 1500003,
+                "name": "Саше для белья Areon Nature Лаванда (60\u00a0г)",
+                "imgURL": "https://iili.io/HGfLgqJ.jpg",
+                "price": 12.80,
+                "percentOff": 0,
+                "unitsAvailable": 27
+              }
             ]
           }
         ]
