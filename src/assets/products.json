@@ -45,7 +45,7 @@
                   },
                   {
                     "code": 1102002,
-                    "name": "Отбеливатель для гардин и занавесок Dr.\u00a0Beckmann (3x40\u00a0г)",
+                    "name": "Отбеливатель для гардин и занавесок Dr. Beckmann (3x40\u00a0г)",
                     "imgURL": "https://iili.io/HGqitO7.jpg",
                     "price": 12.72,
                     "percentOff": 0,
@@ -185,7 +185,7 @@
                 "code": 1302, "name": "Средства для чистки стиральных и посудомоечных машин", "content": [
                   {
                     "code": 1302001,
-                    "name": "Средство от накипи Dr.\u00a0Beckmann (2x50\u00a0г)",
+                    "name": "Средство от накипи Dr. Beckmann (2x50\u00a0г)",
                     "imgURL": "https://iili.io/HGfyonS.jpg",
                     "price": 13.35,
                     "percentOff": 0,
@@ -227,17 +227,86 @@
             "code": 1400, "name": "Чистящие и моющие средства", "sub": [
               {
                 "code": 1401, "name": "Универсальные средства", "content": [
-                  
+                  {
+                    "code": 1401001,
+                    "name": "Средство чистящее универсальное Wonder Lab (550\u00a0мл)",
+                    "imgURL": "https://iili.io/HGqyXpf.jpg",
+                    "price": 13.15,
+                    "percentOff": 0,
+                    "unitsAvailable": 30
+                  },
+                  {
+                    "code": 1401002,
+                    "name": "Средство чистящее универсальное Frosch Лаванда (750\u00a0мл)",
+                    "imgURL": "https://iili.io/HGBHTOJ.jpg",
+                    "price": 8.57,
+                    "percentOff": 0,
+                    "unitsAvailable": 24
+                  },
+                  {
+                    "code": 1401003,
+                    "name": "Порошок чистящий универсальный Mr. Proper Лимон (400\u00a0г)",
+                    "imgURL": "https://iili.io/HGBJA7e.jpg",
+                    "price": 7.84,
+                    "percentOff": 0,
+                    "unitsAvailable": 25
+                  }
                 ]
               },
               {
                 "code": 1402, "name": "Средства для кухни", "content": [
-                  
+                  {
+                    "code": 1402001,
+                    "name": "Средство для чистки плит и печей SANO Forte Plus (750\u00a0мл)",
+                    "imgURL": "https://iili.io/HGB29St.jpg",
+                    "price": 19.25,
+                    "percentOff": 10,
+                    "unitsAvailable": 19
+                  },
+                  {
+                    "code": 1402002,
+                    "name": "Средство для чистки кухни Unicum Multy (500\u00a0мл)",
+                    "imgURL": "https://iili.io/HGB3YIs.jpg",
+                    "price": 14.02,
+                    "percentOff": 0,
+                    "unitsAvailable": 15
+                  },
+                  {
+                    "code": 1402003,
+                    "name": "Средство для ухода за холодильником Vash Gold (500\u00a0мл)",
+                    "imgURL": "https://iili.io/HGBFDVj.jpg",
+                    "price": 14.54,
+                    "percentOff": 0,
+                    "unitsAvailable": 23
+                  }
                 ]
               },
               {
                 "code": 1403, "name": "Средства для ванной и туалета", "content": [
-                  
+                  {
+                    "code": 1403001,
+                    "name": "Гель для туалета и ванной Grass WC-gel (750\u00a0мл)",
+                    "imgURL": "https://iili.io/HGBfnLb.jpg",
+                    "price": 8.21,
+                    "percentOff": 0,
+                    "unitsAvailable": 29
+                  },
+                  {
+                    "code": 1403002,
+                    "name": "Спрей для чистки ванны и душа Frosch Цитрус (500\u00a0мл)",
+                    "imgURL": "https://iili.io/HGBfPje.jpg",
+                    "price": 8.57,
+                    "percentOff": 0,
+                    "unitsAvailable": 18
+                  },
+                  {
+                    "code": 1403003,
+                    "name": "Очиститель унитазов Frosch Мята (750\u00a0мл)",
+                    "imgURL": "https://iili.io/HGBqrKv.jpg",
+                    "price": 11.18,
+                    "percentOff": 0,
+                    "unitsAvailable": 11
+                  }
                 ]
               },
               {
@@ -359,7 +428,7 @@
             "code": 2003, "name": "Стекломои, скребки, водосгоны", "content": [
               {
                 "code": 2003001,
-                "name": "Скребок для чистки стеклокерамики Dr.\u00a0Beckmann",
+                "name": "Скребок для чистки стеклокерамики Dr. Beckmann",
                 "imgURL": "https://iili.io/HGKi6Vj.jpg",
                 "price": 14.60,
                 "percentOff": 0,
