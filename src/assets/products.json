@@ -311,27 +311,106 @@
               },
               {
                 "code": 1404, "name": "Средства для стёкол и зеркал", "content": [
-                  
+                  {
+                    "code": 1404001,
+                    "name": "Средство для окон и зеркал Synergetic (500\u00a0мл)",
+                    "imgURL": "https://iili.io/HGBzztS.jpg",
+                    "price": 7.07,
+                    "percentOff": 0,
+                    "unitsAvailable": 19
+                  },
+                  {
+                    "code": 1404002,
+                    "name": "Средство для стеклянных поверхностей SANO Clear Blue (1\u00a0л)",
+                    "imgURL": "https://iili.io/HGBIZYJ.jpg",
+                    "price": 13.48,
+                    "percentOff": 10,
+                    "unitsAvailable": 21
+                  },
+                  {
+                    "code": 1404003,
+                    "name": "Средство для окон и зеркал Clin (500\u00a0мл)",
+                    "imgURL": "https://iili.io/HGBT5yx.jpg",
+                    "price": 11.54,
+                    "percentOff": 0,
+                    "unitsAvailable": 14
+                  }
                 ]
               },
               {
                 "code": 1405, "name": "Средства для устранения засоров в трубах", "content": [
-                  
+                  {
+                    "code": 1405001,
+                    "name": "Bagi Шуманит от засоров (70\u00a0г)",
+                    "imgURL": "https://iili.io/HGBTVaa.jpg",
+                    "price": 5.86,
+                    "percentOff": 0,
+                    "unitsAvailable": 32
+                  },
+                  {
+                    "code": 1405002,
+                    "name": "Гель для прочистки труб Tiret Турбо (200\u00a0мл)",
+                    "imgURL": "https://iili.io/HGBufKF.jpg",
+                    "price": 6.43,
+                    "percentOff": 0,
+                    "unitsAvailable": 25
+                  }
                 ]
               },
               {
-                "code": 1406, "name": "Чистящие средства для мебели", "content": [
-                  
+                "code": 1406, "name": "Чистящие средства для мебели и ковров", "content": [
+                  {
+                    "code": 1406001,
+                    "name": "Полироль для деревянных поверхностей Emsal (250\u00a0мл)",
+                    "imgURL": "https://iili.io/HGBu6Ug.jpg",
+                    "price": 8.45,
+                    "percentOff": 0,
+                    "unitsAvailable": 15
+                  },
+                  {
+                    "code": 1406002,
+                    "name": "Пятновыводитель для ковров, текстиля и одежды Tuba (500\u00a0мл)",
+                    "imgURL": "https://iili.io/HGBAlrF.jpg",
+                    "price": 12.57,
+                    "percentOff": 0,
+                    "unitsAvailable": 18
+                  },
+                  {
+                    "code": 1406003,
+                    "name": "Гель для ковров и мягкой мебели Grass Carpet Cleaner (5,4\u00a0кг)",
+                    "imgURL": "https://iili.io/HGBA8kG.jpg",
+                    "price": 50.17,
+                    "percentOff": 20,
+                    "unitsAvailable": 21
+                  }
                 ]
               },
               {
-                "code": 1407, "name": "Чистящие средства для ковров", "content": [
-                  
-                ]
-              },
-              {
-                "code": 1408, "name": "Моющие средства для полов", "content": [
-                  
+                "code": 1407, "name": "Моющие средства для полов", "content": [
+                  {
+                    "code": 1407001,
+                    "name": "Средство для мытья полов и стен Mr. Proper Океанская свежесть (500\u00a0мл)",
+                    "imgURL": "https://iili.io/HGBRxCN.jpg",
+                    "price": 7.04,
+                    "percentOff": 0,
+                    "unitsAvailable": 29
+                  },
+                  {
+                    "code": 1407002,
+                    "name": "Средство для мытья полов Bagi Паркет (550\u00a0мл)",
+                    "imgURL": "https://iili.io/HGBRW8u.jpg",
+                    "price": 19.39,
+                    "percentOff": 0,
+                    "unitsAvailable": 19
+                  },
+                  {
+                    "code": 1407003,
+                    "name": "Средство для пола Synergetic Аромагия (750\u00a0мл)",
+                    "imgURL": "https://iili.io/HGB5zDx.jpg",
+                    "price": 11.84,
+                    "percentOff": 0,
+                    "unitsAvailable": 12
+                  }
                 ]
               }
             ]
