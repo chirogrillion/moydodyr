@@ -7,7 +7,6 @@
   margin: 0;
 }
 .QuantityInput input[type="number"] {
-  -moz-appearance: textfield;
   flex: 1 1 auto;
   z-index: 1;
   min-width: 40px;
@@ -38,4 +37,10 @@
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   padding-left: 12px;
+}
+@supports (-moz-appearance: none) {
+  .QuantityInput input[type="number"] {
+    -moz-appearance: textfield;
+    max-width: 0;
+  }
 }

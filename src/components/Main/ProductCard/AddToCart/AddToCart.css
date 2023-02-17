@@ -6,3 +6,9 @@
   width: 100%;
   white-space: nowrap;
 }
+@supports (-moz-appearance: none) {
+  .AddToCart {
+    display: flex;
+    justify-content: center;
+  }
+}
