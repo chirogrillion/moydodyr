@@ -14,6 +14,22 @@
                     "price": 32.94,
                     "percentOff": 0,
                     "unitsAvailable": 9
+                  },
+                  {
+                    "code": 1101002,
+                    "name": "Гель для стирки цветного белья Synergetic (1,5\u00a0л)",
+                    "imgURL": "https://iili.io/HGq4ZR1.jpg",
+                    "price": 17.11,
+                    "percentOff": 0,
+                    "unitsAvailable": 11
+                  },
+                  {
+                    "code": 1101003,
+                    "name": "Капсулы для стирки Tide Go Pods с прикосновением аромата Lenor (23x25,2\u00a0г)",
+                    "imgURL": "https://iili.io/HGq6mk7.jpg",
+                    "price": 56.07,
+                    "percentOff": 30,
+                    "unitsAvailable": 3
                   }
                 ]
               },
@@ -26,6 +42,22 @@
                     "price": 7.80,
                     "percentOff": 0,
                     "unitsAvailable": 29
+                  },
+                  {
+                    "code": 1102002,
+                    "name": "Отбеливатель для гардин и занавесок Dr.\u00a0Beckmann (3x40\u00a0г)",
+                    "imgURL": "https://iili.io/HGqitO7.jpg",
+                    "price": 12.72,
+                    "percentOff": 0,
+                    "unitsAvailable": 0
+                  },
+                  {
+                    "code": 1102003,
+                    "name": "Средство для предварительной обработки пятен Frosch (75\u00a0мл)",
+                    "imgURL": "https://iili.io/HGqsrmP.jpg",
+                    "price": 6.01,
+                    "percentOff": 0,
+                    "unitsAvailable": 26
                   }
                 ]
               },
@@ -38,6 +70,22 @@
                     "price": 26.54,
                     "percentOff": 0,
                     "unitsAvailable": 11
+                  },
+                  {
+                    "code": 1103002,
+                    "name": "Кондиционер для белья BioMio Лаванда (1\u00a0л)",
+                    "imgURL": "https://iili.io/HGqQJ9V.jpg",
+                    "price": 19.14,
+                    "percentOff": 0,
+                    "unitsAvailable": 14
+                  },
+                  {
+                    "code": 1103003,
+                    "name": "Гель-ополаскиватель для белья Gallus Орхидея (2,04\u00a0л)",
+                    "imgURL": "https://iili.io/HGqQPfa.jpg",
+                    "price": 15.99,
+                    "percentOff": 15,
+                    "unitsAvailable": 9
                   }
                 ]
               }
@@ -54,6 +102,22 @@
                     "price": 10.44,
                     "percentOff": 0,
                     "unitsAvailable": 24
+                  },
+                  {
+                    "code": 1201002,
+                    "name": "Гель для мытья посуды Synergetic Сочный апельсин (5\u00a0л)",
+                    "imgURL": "https://iili.io/HGqtf3J.jpg",
+                    "price": 58.79,
+                    "percentOff": 20,
+                    "unitsAvailable": 2
+                  },
+                  {
+                    "code": 1201003,
+                    "name": "Средство для мытья посуды Frosch Зелёный лимон (500\u00a0мл)",
+                    "imgURL": "https://iili.io/HGqDJ94.jpg",
+                    "price": 6.55,
+                    "percentOff": 0,
+                    "unitsAvailable": 19
                   }
                 ]
               },
@@ -66,6 +130,22 @@
                     "price": 17.00,
                     "percentOff": 15,
                     "unitsAvailable": 5
+                  },
+                  {
+                    "code": 1202002,
+                    "name": "Соль для посудомоечных машин BioMio (1\u00a0кг)",
+                    "imgURL": "https://iili.io/HGqDgxS.jpg",
+                    "price": 8.86,
+                    "percentOff": 0,
+                    "unitsAvailable": 18
+                  },
+                  {
+                    "code": 1202003,
+                    "name": "Таблетки для посудомоечной машины Fairy All in One Лимон (84\u00a0шт.)",
+                    "imgURL": "https://iili.io/HGqbA7f.jpg",
+                    "price": 146.94,
+                    "percentOff": 20,
+                    "unitsAvailable": 10
                   }
                 ]
               }
@@ -131,7 +211,14 @@
               },
               {
                 "code": 1303, "name": "Средства для чистки утюгов", "content": [
-                  
+                  {
+                    "code": 1303001,
+                    "name": "Карандаш для чистки утюгов Золушка (30\u00a0г)",
+                    "imgURL": "https://iili.io/HGqr52S.jpg",
+                    "price": 2.33,
+                    "percentOff": 0,
+                    "unitsAvailable": 59
+                  }
                 ]
               }
             ]
@@ -319,8 +406,8 @@
                 "name": "Швабра с отжимом Vileda Twist & Go",
                 "imgURL": "https://iili.io/HGfdlyb.jpg",
                 "price": 127.62,
-                "percentOff": 10,
-                "unitsAvailable": 6
+                "percentOff": 0,
+                "unitsAvailable": 0
               }
             ]
           },
