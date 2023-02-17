@@ -313,17 +313,86 @@
           },
           {
             "code": 2007, "name": "Тазы и вёдра", "content": [
-              
+              {
+                "code": 2007001,
+                "name": "Ведро с отжимом Vileda SuperMocio (10\u00a0л)",
+                "imgURL": "https://iili.io/HGfWXsa.jpg",
+                "price": 44.33,
+                "percentOff": 0,
+                "unitsAvailable": 12
+              },
+              {
+                "code": 2007002,
+                "name": "Ковш пластмассовый AZERJAN (1,25\u00a0л)",
+                "imgURL": "https://iili.io/HGfhIne.jpg",
+                "price": 3.99,
+                "percentOff": 0,
+                "unitsAvailable": 31
+              },
+              {
+                "code": 2007003,
+                "name": "Таз Бытпласт Диана (11\u00a0л)",
+                "imgURL": "https://iili.io/HGfwlCF.jpg",
+                "price": 10.19,
+                "percentOff": 0,
+                "unitsAvailable": 26
+              }
             ]
           },
           {
             "code": 2008, "name": "Мусорные вёдра и баки", "content": [
-              
+              {
+                "code": 2008001,
+                "name": "Ведро для мусора Idea Вязание (10\u00a0л)",
+                "imgURL": "https://iili.io/HGfNmfn.jpg",
+                "price": 9.37,
+                "percentOff": 0,
+                "unitsAvailable": 19
+              },
+              {
+                "code": 2008002,
+                "name": "Ведро для мусора Perfecto Linea (5\u00a0л)",
+                "imgURL": "https://iili.io/HGfOYqF.jpg",
+                "price": 68.48,
+                "percentOff": 10,
+                "unitsAvailable": 9
+              },
+              {
+                "code": 2008003,
+                "name": "Контейнер для мусора Эдванс (120\u00a0л)",
+                "imgURL": "https://iili.io/HGfeQ6X.jpg",
+                "price": 116.68,
+                "percentOff": 10,
+                "unitsAvailable": 11
+              }
             ]
           },
           {
             "code": 2009, "name": "Мешки для мусора", "content": [
-              
+              {
+                "code": 2009001,
+                "name": "Мешки для мусора Рыжий кот (60\u00a0л; 20\u00a0шт.)",
+                "imgURL": "https://iili.io/HGf8T3F.jpg",
+                "price": 6.84,
+                "percentOff": 0,
+                "unitsAvailable": 47
+              },
+              {
+                "code": 2009002,
+                "name": "Пакеты для мусора Чистюля (120\u00a0л; 10\u00a0шт.)",
+                "imgURL": "https://iili.io/HGfSuPS.jpg",
+                "price": 6.44,
+                "percentOff": 0,
+                "unitsAvailable": 42
+              },
+              {
+                "code": 2009003,
+                "name": "Пакеты для мусора Paclan Multitop (35\u00a0л; 30\u00a0шт.)",
+                "imgURL": "https://iili.io/HGfUk7e.jpg",
+                "price": 9.56,
+                "percentOff": 10,
+                "unitsAvailable": 68
+              }
             ]
           }
         ]
