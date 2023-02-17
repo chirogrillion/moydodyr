@@ -9,13 +9,11 @@
                 "code": 1101, "name": "Стиральные порошки, гели, капсулы", "content": [
                   {
                     "code": 1101001,
-                    "name": "Стиральный порошок Persil Color Свежесть от Vernel (3 кг)",
+                    "name": "Стиральный порошок Persil Color Свежесть от Vernel (3\u00a0кг)",
                     "imgURL": "https://iili.io/HE9OoeS.jpg",
                     "price": 32.94,
                     "percentOff": 0,
-                    "unitsAvailable": 9,
-                    "brand": 100,
-                    "form": 6
+                    "unitsAvailable": 9
                   }
                 ]
               },
@@ -23,13 +21,11 @@
                 "code": 1102, "name": "Отбеливатели и пятновыводители", "content": [
                   {
                     "code": 1102001,
-                    "name": "Пятновыводитель и отбеливатель Vanish (500 г)",
+                    "name": "Пятновыводитель и отбеливатель Vanish (500\u00a0г)",
                     "imgURL": "https://iili.io/HEdqaTu.jpg",
                     "price": 7.80,
                     "percentOff": 0,
-                    "unitsAvailable": 29,
-                    "brand": 103,
-                    "form": 6
+                    "unitsAvailable": 29
                   }
                 ]
               },
@@ -37,13 +33,11 @@
                 "code": 1103, "name": "Кондиционеры и ополаскиватели", "content": [
                   {
                     "code": 1103001,
-                    "name": "Кондиционер для детского белья Synergetic (2,75 л)",
+                    "name": "Кондиционер для детского белья Synergetic (2,75\u00a0л)",
                     "imgURL": "https://iili.io/HEdTiBe.jpg",
                     "price": 26.54,
                     "percentOff": 0,
-                    "unitsAvailable": 11,
-                    "brand": 104,
-                    "form": 4
+                    "unitsAvailable": 11
                   }
                 ]
               }
@@ -55,13 +49,11 @@
                 "code": 1201, "name": "Средства для мытья посуды вручную", "content": [
                   {
                     "code": 1201001,
-                    "name": "Средство для мытья посуды Fairy Pure & Clean (450 мл)",
+                    "name": "Средство для мытья посуды Fairy Pure & Clean (450\u00a0мл)",
                     "imgURL": "https://iili.io/HEddoLN.jpg",
                     "price": 10.44,
                     "percentOff": 0,
-                    "unitsAvailable": 24,
-                    "brand": 101,
-                    "form": 4
+                    "unitsAvailable": 24
                   }
                 ]
               },
@@ -69,13 +61,11 @@
                 "code": 1202, "name": "Средства для мытья посуды в посудомоечной машине", "content": [
                   {
                     "code": 1202001,
-                    "name": "Таблетки для посудомоечной машины Finish Classic (28 шт.)",
+                    "name": "Таблетки для посудомоечной машины Finish Classic (28\u00a0шт.)",
                     "imgURL": "https://iili.io/HEdFU37.jpg",
                     "price": 17.00,
                     "percentOff": 15,
-                    "unitsAvailable": 5,
-                    "brand": 102,
-                    "form": 8
+                    "unitsAvailable": 5
                   }
                 ]
               }
@@ -155,17 +145,86 @@
         "code": 2000, "name": "Хозяйственные товары", "sub": [
           {
             "code": 2001, "name": "Перчатки", "content": [
-              
+              {
+                "code": 2001001,
+                "name": "Перчатки хозяйственные резиновые Paclan Practi (L; 1\u00a0пара)",
+                "imgURL": "https://iili.io/HGKKGa9.jpg",
+                "price": 6.66,
+                "percentOff": 0,
+                "unitsAvailable": 25
+              },
+              {
+                "code": 2001002,
+                "name": "Перчатки одноразовые полиэтиленовые Paterra (M; 50\u00a0шт.)",
+                "imgURL": "https://iili.io/HGKqPrN.jpg",
+                "price": 2.99,
+                "percentOff": 0,
+                "unitsAvailable": 16
+              },
+              {
+                "code": 2001003,
+                "name": "Перчатки одноразовые виниловые Рыжий Кот (S; 100\u00a0шт.)",
+                "imgURL": "https://iili.io/HGKCKcN.jpg",
+                "price": 40.87,
+                "percentOff": 10,
+                "unitsAvailable": 7
+              }
             ]
           },
           {
             "code": 2002, "name": "Губки, салфетки, полотенца, тряпки", "content": [
-              
+              {
+                "code": 2002001,
+                "name": "Губки для мытья посуды Vileda Rainbow (10\u00a0шт.)",
+                "imgURL": "https://iili.io/HGKoGaV.jpg",
+                "price": 10.32,
+                "percentOff": 0,
+                "unitsAvailable": 24
+              },
+              {
+                "code": 2002002,
+                "name": "Губки металлические Vileda Glitzi PowerInox (2\u00a0шт.)",
+                "imgURL": "https://iili.io/HGKxvWu.jpg",
+                "price": 14.53,
+                "percentOff": 5,
+                "unitsAvailable": 13
+              },
+              {
+                "code": 2002003,
+                "name": "Салфетки вискозные Чистюля (340x380\u00a0мм; 3\u00a0шт.)",
+                "imgURL": "https://iili.io/HGKNj2f.jpg",
+                "price": 3.39,
+                "percentOff": 0,
+                "unitsAvailable": 31
+              }
             ]
           },
           {
             "code": 2003, "name": "Стекломои, скребки, водосгоны", "content": [
-              
+              {
+                "code": 2003001,
+                "name": "Скребок для чистки стеклокерамики Dr.\u00a0Beckmann",
+                "imgURL": "https://iili.io/HGKi6Vj.jpg",
+                "price": 14.60,
+                "percentOff": 0,
+                "unitsAvailable": 5
+              },
+              {
+                "code": 2003002,
+                "name": "Стекломойка с телескопической рукояткой York",
+                "imgURL": "https://iili.io/HGKLVCG.jpg",
+                "price": 26.27,
+                "percentOff": 0,
+                "unitsAvailable": 7
+              },
+              {
+                "code": 2003003,
+                "name": "Скребок силиконовый для ванной Brabantia",
+                "imgURL": "https://iili.io/HGKDJ8Q.jpg",
+                "price": 77.27,
+                "percentOff": 20,
+                "unitsAvailable": 2
+              }
             ]
           },
           {
